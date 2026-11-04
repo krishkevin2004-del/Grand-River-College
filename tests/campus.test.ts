@@ -148,3 +148,13 @@ test("maintenance rooms run 101-120, 201-220, 301-320 with five sample names", a
   assert.ok(ISSUES.length >= 5);
   assert.match(sampleReference(12345), /^GRU-MX-\d{4}$/);
 });
+
+test("greetings and small talk get warm replies, real questions still route", async () => {
+  for (const q of ["hello", "what is up", "Whats up?", "how are you", "thanks!", "bye", "who are you", "hey there", "good morning"]) {
+    const r = await ask(q);
+    assert.equal(r.type, "chat", q);
+    assert.ok(r.text.length > 40, q);
+  }
+  assert.equal((await ask("how are you open after 9")).type, "answer");
+  assert.equal((await ask("hi, can I bring a fridge")).type, "answer");
+});

@@ -186,6 +186,22 @@ function diningAnswer(q: string, dates: string[]) {
   return reply(visible.map((citation) => citation.passage).join("\n\n") + suffix, visible);
 }
 
+// Friendly replies to greetings and small talk, in Rory's voice. Whole-message matches only,
+// so "how are you open after 9" still goes to dining.
+const SMALL_TALK: [RegExp, string][] = [
+  [/^(thanks|thank you|thx|ty|cheers|appreciate it)( so much| a lot| again)?( rory)?[!?. ]*$/, "You're so welcome! Anything else I can help you with today?"],
+  [/^(bye|goodbye|see you|see ya|later|good night|night)( rory)?[!?. ]*$/, "Take care! I'm here anytime you need me. Go River! 🌊"],
+  [/^(how are you|how are you doing|how's it going|hows it going|how r u|you good)( today)?( rory)?[!?. ]*$/, "I'm doing great, thanks for asking! 😊 Ready to help. Want to know what's cooking in the dining halls or what's happening on campus?"],
+  [/^(what's up|whats up|what is up|sup|wassup|what's good|whats good|what's new|whats new)( rory)?[!?. ]*$/, "Not much, just hanging out by the river and ready to help! 😊 I can tell you what's on the menu, what's happening this week, or what the handbook says about your room. What would you like to know?"],
+  [/^(who are you|what are you|what's your name|whats your name|what can you do|what do you do|help me)[!?. ]*$/, "I'm Rory, Grand River's campus helper! 👋 Ask me about dining hall menus and hours, campus events, housing rules like guests or what you can bring, or how to reach your hall desk."],
+  [/^(hi|hello|hey|hiya|howdy|yo|heya|good (morning|afternoon|evening))( there| again| rory| everyone)?[!?. ]*$/, "Hi there! 👋 I'm Rory, and I'm happy you stopped by. I can help with dining, events, housing questions and campus contacts. What's on your mind today?"],
+];
+
+function smallTalk(q: string) {
+  const text = q.trim().replace(/\s+/g, " ");
+  return SMALL_TALK.find(([pattern]) => pattern.test(text))?.[1] ?? null;
+}
+
 export function campusReply(question: string): AssistantReply | null {
   const q = question.toLowerCase().replace(/’/g, "'");
   const dates = datesFor(q);
@@ -197,6 +213,7 @@ export function campusReply(question: string): AssistantReply | null {
   const section = Object.entries(rules).find(([, rule]) => rule.test(q));
   if (section) return housingReply(section[0]);
   if (/\b(dining|food|eat|breakfast|what's open|open (now|today|tonight|tomorrow)|lunch|dinner|menu|vegan|vegetarian|halal|open after)\b/.test(q) || dining.venues.some((v) => q.includes(v.name.toLowerCase()))) return diningAnswer(q, dates);
-  if (/^(hi|hello|hey|good (morning|afternoon|evening)|thanks|thank you)( there| again)?[!?. ]*$/.test(q)) return { type: "chat", text: "Ask me about Grand River housing, dining, events, or campus contacts." };
+  const talk = smallTalk(q);
+  if (talk) return { type: "chat", text: talk };
   return null;
 }

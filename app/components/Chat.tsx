@@ -414,7 +414,7 @@ function AssistantMessage({
       }
       return (
         <div className="bubble assistant handoff">
-          <p>{reply.note ?? "I couldn't find that in my sources."}</p>
+          <p>{reply.note ?? "I couldn't find that one in my sources, and I'd rather not guess."}</p>
           <p className="muted small">
             Rather than guess, check with your RA or your hall&apos;s Service
             Center.
@@ -454,8 +454,15 @@ function AssistantMessage({
       return (
         <div className="bubble assistant">
           <p>
-            I can help with Grand River housing, dining, events, and campus contacts.
+            Hmm, that one&apos;s outside what I know. 😊 I&apos;m best with Grand River dining, events, housing and campus contacts. Want to try one of these?
           </p>
+          {isLatest && (
+            <div className="hall-chips">
+              {["What's for dinner tonight?", "Any free events this weekend?", "How many guests can I sign in?"].map((q) => (
+                <button key={q} className="chip inline" onClick={() => onAsk(q)}>{q}</button>
+              ))}
+            </div>
+          )}
         </div>
       );
 
