@@ -1,0 +1,478 @@
+{
+  "handbookTitle": "Grand River University Resident Handbook",
+  "sourceFile": "public/handbook.pdf",
+  "chunks": [
+    {
+      "id": "01.0",
+      "part": "Welcome and how to use this handbook",
+      "section": "01.0 About this edition",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "text": "Grand River University (GRU) is a fictional residential university. This 2026–27 handbook, its housing agreement examples, dates, fees, and contact information are simulation data. All numbers starting with XXX are placeholders. For real emergencies, use your local emergency services."
+    },
+    {
+      "id": "01.1",
+      "part": "Welcome and how to use this handbook",
+      "section": "01.1 Who does what",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "text": "Residential Life supports the social and academic life of the halls. Resident Assistants (RAs) help with community concerns and roommate agreements. Hall Directors supervise each building and review urgent housing or safety concerns. Housing Assignments handles contracts, billing, placement, and room changes. Campus Services oversees desks, mail, and facilities. Campus Dining and the Student Programs Board maintain their own schedules."
+    },
+    {
+      "id": "01.2",
+      "part": "Welcome and how to use this handbook",
+      "section": "01.2 Which information to use",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "text": "Use this handbook for residential policies, the campus directory for contacts and building details, and dated dining and events records for daily schedules. A dated closure or revised event record takes precedence over a regular schedule. If an answer depends on your specific contract, room placement, or pending request, contact the relevant office."
+    },
+    {
+      "id": "01.3",
+      "part": "Welcome and how to use this handbook",
+      "section": "01.3 Community involvement",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "text": "Each district has a resident council that proposes programs and allocates small event funds. Apply through the hall desk at any point in the term. Participation is optional. Floor meetings convey operational information, and residents who miss one may request the notes from their RA."
+    },
+    {
+      "id": "02.1",
+      "part": "Safety, reporting and support",
+      "section": "02.1 Immediate danger and urgent building issues",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "text": "During a real emergency, contact local emergency services. In the fictional campus scenario, the GRU Police Dispatch line represents the campus safety contact. Report active water leaks, loss of heat in cold weather, a door that will not lock, and broken glass in a corridor to your staffed desk or the overnight duty line. Use a maintenance ticket for routine repairs."
+    },
+    {
+      "id": "02.2",
+      "part": "Safety, reporting and support",
+      "section": "02.2 Missing residents and emergency contacts",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "text": "You can report a missing resident to campus dispatch immediately. There is no required waiting period. Provide the last known location and time if you have them. In the housing portal you may designate a confidential missing-person contact separately from your general emergency contact. Staff use the contact only as permitted under the relevant reporting procedure."
+    },
+    {
+      "id": "02.3",
+      "part": "Safety, reporting and support",
+      "section": "02.3 Counseling, care and accessibility",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "text": "The Wellness Center schedules confidential counseling appointments and operates a same-day triage queue on weekdays. Student Care coordinates practical support after a crisis, hospitalization, or loss of housing. Access Services coordinates disability accommodations. The housing desk may relay contact information without asking for medical details."
+    },
+    {
+      "id": "02.4",
+      "part": "Safety, reporting and support",
+      "section": "02.4 Bystander response",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "text": "If safe to do so, seek assistance from staff, stay nearby, and give responders the location and what you observed. Students who seek timely assistance for a substance-related medical emergency can request a medical-assistance review for the associated possession or consumption concern. The review considers cooperation and does not prevent separate action regarding violence or other harm."
+    },
+    {
+      "id": "03.1",
+      "part": "Housing eligibility and accommodations",
+      "section": "03.1 Live-on requirement",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "text": "Full-time first-year undergraduates ordinarily live in university housing for their first two enrolled semesters. Students may request an exemption for a documented disability-related need, living with a parent or guardian within 35 road miles, primary caregiving, military service obligations, or an approved financial hardship. An exemption is effective when written approval arrives. Applying does not release an existing agreement."
+    },
+    {
+      "id": "03.2",
+      "part": "Housing eligibility and accommodations",
+      "section": "03.2 Accommodation requests",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "text": "Start with Access Services for an accessible room, private or nearby bathroom, approved cooling unit, assistance animal, or dining accommodation. Submit fall priority requests by June 15 and spring priority requests by November 15. Later requests are accepted and may require an interim arrangement depending on availability. Housing communicates implementation details separately from the confidential review."
+    },
+    {
+      "id": "03.3",
+      "part": "Housing eligibility and accommodations",
+      "section": "03.3 Gender-inclusive, recovery and family housing",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "text": "Gender-inclusive rooms are available by opt-in during selection or by request afterward. Residents may update their placement preferences through Housing Assignments. Bracken Hall includes a substance-free floor. Residents on that floor agree to keep alcohol and recreational drugs out of the community even when they are of legal age. Cedar Court has a limited set of partner and dependent units with a separate agreement."
+    },
+    {
+      "id": "03.4",
+      "part": "Housing eligibility and accommodations",
+      "section": "03.4 Residents under 18",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "text": "A parent or legal guardian completes the guarantor acknowledgment before check-in when required by the agreement. Residents receive the same housing support channels. Staff follow the applicable campus protocol when an incident involves a minor or a guardian notification."
+    },
+    {
+      "id": "04.1",
+      "part": "Resident rights and shared responsibilities",
+      "section": "04.1 Resident rights",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "text": "Residents may use assigned spaces, sleep and study without unreasonable disruption, request disability accommodations, and report concerns without retaliation. Staff will explain the relevant policy and response options when reviewing an incident, subject to privacy limits."
+    },
+    {
+      "id": "04.2",
+      "part": "Resident rights and shared responsibilities",
+      "section": "04.2 Resident responsibilities",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "text": "Keep access credentials secure, follow posted capacity rules, cooperate with evacuations and authorized repairs, and address guest behavior. Keep the path from beds to the exit clear. Review your room inventory, report problems promptly, and consult your roommate before changing shared arrangements."
+    },
+    {
+      "id": "04.3",
+      "part": "Resident rights and shared responsibilities",
+      "section": "04.3 Housing responsibilities",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "text": "Housing maintains assigned facilities, provides a reporting path at all hours, documents significant changes, and makes reasonable efforts to provide comparable accommodations during an outage. Temporary measures may be announced by email, at the desk, and on building signage. Residents can request a review if a reassignment creates an accessibility or financial issue."
+    },
+    {
+      "id": "05.1",
+      "part": "Hall access, keys and identification",
+      "section": "05.1 Building access",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "text": "Residential floors require resident card access at all hours. Lobby public access typically runs 07:00–20:00. During an event, public access applies only to the advertised public venue and route. Dining entrances have independent hours. Do not prop secure doors or admit unknown people behind you."
+    },
+    {
+      "id": "05.2",
+      "part": "Hall access, keys and identification",
+      "section": "05.2 Lockouts and lost credentials",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "text": "During desk hours, visit the desk with a photo ID or complete an identity check with desk staff. After closing, use the duty line. The first two assisted lockouts each semester are free. Later assisted lockouts cost $12 each. Lost physical keys may require a $55 lock change, billed separately. Disable a lost campus card in the portal and alert the desk promptly."
+    },
+    {
+      "id": "05.3",
+      "part": "Hall access, keys and identification",
+      "section": "05.3 Guests and overnight stays",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "text": "A host may sign in up to two guests at a time and must accompany them beyond the lobby. Guests aged 16 and up show photo ID. Guests under 16 stay with their parent or guardian during the visit. Overnight visits require agreement from every assigned roommate and registration by 22:00. Each guest may stay up to two consecutive nights and five nights in a rolling 30-day period campuswide. During break periods, guest access is subject to the published closure notice."
+    },
+    {
+      "id": "06.1",
+      "part": "Noise, privacy and roommate agreements",
+      "section": "06.1 Quiet and courtesy hours",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "text": "Quiet hours are 22:00–08:00 Sunday through Thursday nights and 00:00–09:00 for Friday and Saturday nights, meaning Friday and Saturday evening gatherings end by midnight. Courtesy hours apply around the clock. During finals, continuous quiet hours begin at 18:00 the evening before the first scheduled exam day and end when the final exam period closes."
+    },
+    {
+      "id": "06.2",
+      "part": "Noise, privacy and roommate agreements",
+      "section": "06.2 Recording and privacy",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "text": "Obtain permission from people you intend to record in rooms, lounges, and other residential areas. Recording in bathrooms, shower rooms, and changing areas is prohibited. Door cameras and devices pointed into residential corridors require written Housing approval. Share documentation of an incident directly with staff when possible."
+    },
+    {
+      "id": "06.3",
+      "part": "Noise, privacy and roommate agreements",
+      "section": "06.3 Roommate conflicts and harassment",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "text": "Complete the roommate agreement in the first two weeks. Discuss schedules, visitors, shared items, temperature, and cleaning. An RA can help mediate ordinary disagreements. Report threats, harassment, discrimination, stalking, or retaliation to a Hall Director or the appropriate campus reporting office. A resident may request an interim separation while staff review safety concerns."
+    },
+    {
+      "id": "07.1",
+      "part": "Alcohol, drugs, smoking and other conduct",
+      "section": "07.1 Alcohol and controlled substances",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "text": "Residents who may legally possess alcohol may keep it in their assigned room if every assigned occupant is of legal drinking age and the room is outside a substance-free area. Open containers are prohibited in shared corridors and lounges. Common-source containers and drinking games are prohibited in halls. Recreational cannabis is prohibited in residential spaces. Store prescribed medication securely and use it only as directed."
+    },
+    {
+      "id": "07.2",
+      "part": "Alcohol, drugs, smoking and other conduct",
+      "section": "07.2 Smoking and vaping",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "text": "Smoking, vaping, and burning tobacco or cannabis are prohibited inside and within 30 feet of residence entrances, operable windows, and air intakes. Report repeated smoke exposure to the desk, and report active smoke or fire through emergency channels."
+    },
+    {
+      "id": "07.3",
+      "part": "Alcohol, drugs, smoking and other conduct",
+      "section": "07.3 Weapons, fireworks and gambling",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "text": "Weapons, realistic replicas, ammunition, fireworks, and explosive materials are prohibited in residence facilities except where expressly authorized by written campus rules. Report concerning objects to campus dispatch. Money wagering and paid-entry gambling are prohibited in residential areas unless a specifically authorized campus activity permits them."
+    },
+    {
+      "id": "08.1",
+      "part": "Appliances, cooking, cooling and electrical use",
+      "section": "08.1 Personal appliances",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "text": "Each bedroom may have one compact refrigerator up to 3.8 cubic feet and one microwave rated up to 800 watts cooking output. Plug refrigerators and microwaves directly into wall outlets. Use a listed surge protector for low-power electronics. Do not connect power strips to one another or route cords under rugs or through doorways."
+    },
+    {
+      "id": "08.2",
+      "part": "Appliances, cooking, cooling and electrical use",
+      "section": "08.2 Cooking and grilling",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "text": "Electric kettles with automatic shutoff are allowed in bedrooms. Air fryers, hot plates, electric skillets, toaster ovens, and countertop grills belong in designated community kitchens during staffed hours. Return the kitchen to a clean condition and stay with active cooking. Outdoor grilling is limited to installed grills when the courtyard is open. Personal grills and fuel canisters are prohibited."
+    },
+    {
+      "id": "08.3",
+      "part": "Appliances, cooking, cooling and electrical use",
+      "section": "08.3 Cooling, heating and ventilation",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "text": "Portable heaters and resident-installed air conditioners are prohibited. A personal fan is allowed if vents and walkways stay clear. For an approved cooling accommodation, Facilities selects and installs equipment. Never remove window stops or screens, hang objects from windows, or access roofs, ledges, and service balconies."
+    },
+    {
+      "id": "09.1",
+      "part": "Fire protection, evacuation and mobility",
+      "section": "09.1 Alarms and drills",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "text": "Leave promptly using marked stairs when an alarm sounds and follow staff directions at the assembly point. Residents needing an individualized evacuation plan may coordinate it with Access Services and Housing. Return when responders give clearance. Follow the posted severe-weather shelter route when directed."
+    },
+    {
+      "id": "09.2",
+      "part": "Fire protection, evacuation and mobility",
+      "section": "09.2 Fire prevention and equipment",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "text": "Candles, incense, open flames, and combustible storage in exits are prohibited. Keep detectors, sprinkler heads, alarm stations, and extinguishers clear. Tampering with equipment or using emergency exits for routine access may trigger a conduct review. Decorative lights must be listed and used according to their instructions."
+    },
+    {
+      "id": "09.3",
+      "part": "Fire protection, evacuation and mobility",
+      "section": "09.3 Bikes, scooters and mobility aids",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "text": "Store bicycles in racks or assigned storage. Personal electric scooters and e-bike batteries may be stored or charged only at designated outdoor stations. Residents who use medically necessary powered mobility devices may arrange an approved indoor storage and charging location with Access Services. Keep exits, stairwells, and corridor widths clear."
+    },
+    {
+      "id": "10.1",
+      "part": "Animals, bathrooms and use of shared space",
+      "section": "10.1 Pets and approved animals",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "text": "One freshwater aquarium up to eight gallons is allowed per bedroom with roommate agreement. Animals otherwise enter housing only under an applicable service-animal policy, written assistance-animal approval, or an authorized program. Residents are responsible for sanitation and control. Work with Access Services when room access or placement affects an accommodation."
+    },
+    {
+      "id": "10.2",
+      "part": "Animals, bathrooms and use of shared space",
+      "section": "10.2 Bathrooms and shared spaces",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "text": "Use designated bathrooms and honor posted cleaning closures. Keep personal belongings in assigned cubbies or your room. A lounge can be reserved through the desk for up to two hours, subject to capacity and accessible routes. Athletic games, bouncing balls, and similar activities belong in outdoor or recreation facilities."
+    },
+    {
+      "id": "10.3",
+      "part": "Animals, bathrooms and use of shared space",
+      "section": "10.3 Laundry and common area damage",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "text": "Laundry is included for hall residents. Machines run 07:00–23:00. Report machine failures by location and machine number. Staff document damage or extensive cleanup and give residents a chance to provide information before any shared charge. Individually attributable costs are billed to the responsible resident when established."
+    },
+    {
+      "id": "11.1",
+      "part": "Posting, elections, canvassing and business",
+      "section": "11.1 Flyers and digital notices",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "text": "Registered groups may submit one flyer per hall to the desk. Accepted materials receive a removal date no later than the event date plus two days or 14 days after posting, whichever comes first. Staff use designated boards. Floor doors, elevators, fire equipment, and windows are excluded from posting."
+    },
+    {
+      "id": "11.2",
+      "part": "Posting, elections, canvassing and business",
+      "section": "11.2 Elections and outreach",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "text": "Campus election groups and registered organizations may request a staffed lobby table with three business days' notice. Participation must be voluntary. Door-to-door canvassing and collecting signatures on residential floors are prohibited. Ask the desk about permitted public locations when a hall lobby is unavailable."
+    },
+    {
+      "id": "11.3",
+      "part": "Posting, elections, canvassing and business",
+      "section": "11.3 Commercial activity",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "text": "Running a walk-in business, storing resale inventory that interferes with residence use, and selling products door to door are prohibited. A resident may perform remote work from a room within ordinary noise and network rules. Student sales events require venue approval and must use approved common areas."
+    },
+    {
+      "id": "12.1",
+      "part": "Assignments, vacancies and room changes",
+      "section": "12.1 Choosing a room",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "text": "Housing offers selection windows based on class year, documented accommodations, and application timing. Returning residents can form roommate groups before their assigned window. Room type and roommate requests depend on availability. Assignments can change when capacity, accessibility, or safety requires."
+    },
+    {
+      "id": "12.2",
+      "part": "Assignments, vacancies and room changes",
+      "section": "12.2 Transitional placement and open beds",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "text": "When permanent inventory is full, Housing may assign a temporary room at a disclosed rate and offer a permanent placement as space opens. Keep vacant beds, desks, and closets usable for a new roommate. Housing sends notice when practical before filling an open space, including at midyear."
+    },
+    {
+      "id": "12.3",
+      "part": "Assignments, vacancies and room changes",
+      "section": "12.3 Room changes",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "text": "Standard requests open after the tenth class day and require written approval before either resident moves. Staff can review urgent health or safety requests immediately. After approval, collect new access, complete both inventories, and return old keys within 48 hours unless a different move window is specified."
+    },
+    {
+      "id": "13.1",
+      "part": "Furniture, repairs and room entry",
+      "section": "13.1 Furnishings and decorations",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "text": "Each bed space has a bed, desk, chair, and clothing storage. Leave supplied furniture in the assigned room. Use removable mounting strips and keep door decorations to less than half the door surface. Painting, drilling, covering ceilings, and attaching items to sprinkler systems are prohibited."
+    },
+    {
+      "id": "13.2",
+      "part": "Furniture, repairs and room entry",
+      "section": "13.2 Bed adjustments, cleaning and condition",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "text": "Request approved bed adjustments through Facilities. Resident-built lofts and furniture modifications are prohibited. Submit your room condition report within 72 hours of check-in. Clean your assigned space regularly and document pre-existing wear before the deadline to help staff distinguish damage from ordinary use."
+    },
+    {
+      "id": "13.3",
+      "part": "Furniture, repairs and room entry",
+      "section": "13.3 Repairs and authorized entry",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "text": "For routine maintenance, submit a ticket with the room number and description. A submitted ticket authorizes entry for that work during 09:00–18:00 unless an alternate appointment is arranged. Staff normally provide at least 24 hours' notice for scheduled inspections. Urgent hazards, welfare concerns, and emergency repairs may require immediate entry. Staff document the reason and attempt to inform residents afterward."
+    },
+    {
+      "id": "14.1",
+      "part": "Mail, packages, deliveries and lost property",
+      "section": "14.1 Address format and pickup",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "text": "Use the resident's name on file, room number and hall name, and the hall's delivery address listed in the campus directory. The desk accepts ordinary carrier packages when staffed and sends a separate pickup notice after scanning. Show a campus card or complete the desk's ID check."
+    },
+    {
+      "id": "14.2",
+      "part": "Mail, packages, deliveries and lost property",
+      "section": "14.2 Perishables and unclaimed items",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "text": "Meet grocery, restaurant, medication courier, and other time-sensitive deliveries in the public lobby. Desks accept standard carrier parcels subject to size limits and refuse prohibited hazardous items. Standard parcels are held for seven staffed days before return when possible. Change your shipping address before you leave. Package forwarding is unavailable."
+    },
+    {
+      "id": "14.3",
+      "part": "Mail, packages, deliveries and lost property",
+      "section": "14.3 Missing mail and lost property",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "text": "Ask the carrier for proof of delivery, then bring the tracking number to the desk. For lost property, check the desk where the item was found. Ordinary property is held for 14 calendar days. Staff send IDs and keys to the issuing office and route sensitive items to campus dispatch."
+    },
+    {
+      "id": "15.1",
+      "part": "Move-in, breaks and move-out",
+      "section": "15.1 2026–27 residential calendar",
+      "pageStart": 17,
+      "pageEnd": 17,
+      "text": "Fall move-in runs August 27–30, 2026. Fall regular occupancy ends December 19 at noon. Spring check-in opens January 9, 2027 at noon. Spring checkout closes May 8 at noon. Residents may request a later departure for a documented need. Approved dates are communicated separately."
+    },
+    {
+      "id": "15.2",
+      "part": "Move-in, breaks and move-out",
+      "section": "15.2 Break access and winter housing",
+      "pageStart": 17,
+      "pageEnd": 17,
+      "text": "Halls stay open during the fall recess. Winter break housing operates only in Alder and Juniper from December 19 at noon until January 9 at noon. Apply by December 4. Approved residents assigned elsewhere may receive a temporary room. Dining, package pickup, and visitor access follow separate break schedules."
+    },
+    {
+      "id": "15.3",
+      "part": "Move-in, breaks and move-out",
+      "section": "15.3 Checkout, damage and abandoned property",
+      "pageStart": 17,
+      "pageEnd": 17,
+      "text": "Schedule checkout with the desk or use express checkout where offered. Remove belongings, clean surfaces, remove trash, and return keys. Express checkout gives staff permission to inspect later. Staff may bill documented costs for repair, excess cleaning, unreturned access items, or abandoned belongings. Residents have ten business days from notice to request a billing review."
+    },
+    {
+      "id": "16.1",
+      "part": "Accountability, notices and appeals",
+      "section": "16.1 Responding to a report",
+      "pageStart": 18,
+      "pageEnd": 18,
+      "text": "Staff document concerns, give the resident notice of the policy involved, and offer a chance to respond. Minor issues may resolve with coaching, mediation, or a written agreement. Serious or repeated issues can lead to formal review and restrictions, relocation, or removal under the applicable process."
+    },
+    {
+      "id": "16.2",
+      "part": "Accountability, notices and appeals",
+      "section": "16.2 Interim actions and review",
+      "pageStart": 18,
+      "pageEnd": 18,
+      "text": "Housing can restrict access or change a room temporarily when safety or operations require. An interim action is documented separately from the final decision. Written outcomes identify the review office and deadline. Housing decisions ordinarily allow five business days to request review for procedural error, new information, or disproportionate conditions."
+    },
+    {
+      "id": "17.1",
+      "part": "Contracts, cancellations and releases",
+      "section": "17.1 Before arrival",
+      "pageStart": 19,
+      "pageEnd": 19,
+      "text": "Submit a cancellation in the housing portal and retain the confirmation. Fall cancellations received by July 10 have no cancellation fee. A late pre-arrival cancellation carries a $180 fee unless waived. Any enrollment withdrawal and dining cancellation must be handled through their respective offices."
+    },
+    {
+      "id": "17.2",
+      "part": "Contracts, cancellations and releases",
+      "section": "17.2 After check-in",
+      "pageStart": 19,
+      "pageEnd": 19,
+      "text": "Residents may request a release for withdrawal, graduation, relocation for an approved placement, or a documented hardship. Housing confirms the effective date and billing adjustment in writing. Residents seeking a voluntary early exit without an approved release may request a buyout, modeled at 30% of the remaining room charges when available. Leaving the room or returning keys alone does not end charges."
+    },
+    {
+      "id": "17.3",
+      "part": "Contracts, cancellations and releases",
+      "section": "17.3 Temporary suspension and termination",
+      "pageStart": 19,
+      "pageEnd": 19,
+      "text": "Housing may suspend access during investigation or unsafe building conditions, with terms communicated in writing. Termination notices state the effective date, checkout instructions, charges, and applicable review options. If the university cannot provide assigned housing after a prolonged closure, Housing reviews transfer or release options and unused room charges."
+    },
+    {
+      "id": "18.1",
+      "part": "Dining access, food support and expectations",
+      "section": "18.1 Entry and meal plans",
+      "pageStart": 20,
+      "pageEnd": 20,
+      "text": "Use your own campus credential. Residential plans include an allotment of meal entries or unlimited entries depending on the agreement. Guest entries come from a separate balance. Visitors can use the advertised door rate where offered. Wear shoes and a shirt, and keep serving routes accessible."
+    },
+    {
+      "id": "18.2",
+      "part": "Dining access, food support and expectations",
+      "section": "18.2 Takeout, service changes and meal support",
+      "pageStart": 20,
+      "pageEnd": 20,
+      "text": "Students can request one reusable takeaway container per eligible meal entry at designated locations. Changes in station schedules or substitutions may occur before close. If illness or an approved accommodation prevents standard pickup, contact Dining Services about meal pickup options. Check the dated menu for holiday and closure details."
+    },
+    {
+      "id": "18.3",
+      "part": "Dining access, food support and expectations",
+      "section": "18.3 Allergens and dietary information",
+      "pageStart": 20,
+      "pageEnd": 20,
+      "text": "Menu tags describe recorded ingredients or a verified fictional preparation status. They cannot establish safety for a particular person. Ask the dining supervisor to verify the current recipe, supplier substitutions, and shared equipment. A plant-based tag alone provides no allergy assurance. Unknown values remain unknown."
+    },
+    {
+      "id": "19.1",
+      "part": "Technology, outages and public health",
+      "section": "19.1 Internet and equipment",
+      "pageStart": 21,
+      "pageEnd": 21,
+      "text": "Connect through the resident network with your own credentials and register consoles or printers through the device portal. Private wireless routers, credential sharing, and attempts to bypass access controls are prohibited. Submit a service ticket with building, room, device type, and the error time. Avoid including passwords."
+    },
+    {
+      "id": "19.2",
+      "part": "Technology, outages and public health",
+      "section": "19.2 Outages, closures and temporary relocation",
+      "pageStart": 21,
+      "pageEnd": 21,
+      "text": "During an interruption, Housing posts the affected services, temporary meeting location or alternate facilities, and a time for the next update. Bring essential items and medications if moved to another room. Housing coordinates accessibility needs, continuity of dining, and whether relocation affects billing."
+    },
+    {
+      "id": "19.3",
+      "part": "Technology, outages and public health",
+      "section": "19.3 Public health operations",
+      "pageStart": 21,
+      "pageEnd": 21,
+      "text": "A campus health notice may temporarily adjust visitor limits, dining service, room assignments, and access to shared spaces. Student Care can help residents who cannot return home during a closure. Housing sends effective dates and the process for accommodation, reassignment, or contract review."
+    }
+  ]
+}

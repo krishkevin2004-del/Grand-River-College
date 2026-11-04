@@ -1,0 +1,228 @@
+{
+  "university": "Grand River University",
+  "fictional": true,
+  "timezone": "America/New_York",
+  "academic_year": "2026–27",
+  "as_of": "2026-11-04",
+  "halls": [
+    {
+      "id": "alder",
+      "name": "Alder Hall",
+      "district": "North Bank",
+      "room_types": "Traditional doubles",
+      "features": "Winter break host; community kitchen",
+      "dining": "Alder Commons",
+      "desk_phone": "XXX-6720-8982",
+      "desk_hours": {
+        "mon_fri": [
+          "08:00",
+          "22:00"
+        ],
+        "sat_sun": [
+          "10:00",
+          "20:00"
+        ]
+      },
+      "mail_address": "100 Riverbend Loop, Grand River University (fictional)"
+    },
+    {
+      "id": "juniper",
+      "name": "Juniper Hall",
+      "district": "North Bank",
+      "room_types": "Suites",
+      "features": "Winter break host; quiet study wing",
+      "dining": null,
+      "desk_phone": "XXX-6720-8983",
+      "desk_hours": {
+        "mon_fri": [
+          "08:00",
+          "22:00"
+        ],
+        "sat_sun": [
+          "10:00",
+          "20:00"
+        ]
+      },
+      "mail_address": "120 Riverbend Loop, Grand River University (fictional)"
+    },
+    {
+      "id": "bracken",
+      "name": "Bracken Hall",
+      "district": "Riverwalk",
+      "room_types": "Traditional doubles",
+      "features": "Substance-free floor; music practice room",
+      "dining": null,
+      "desk_phone": "XXX-6720-8984",
+      "desk_hours": {
+        "mon_fri": [
+          "08:00",
+          "22:00"
+        ],
+        "sat_sun": [
+          "10:00",
+          "20:00"
+        ]
+      },
+      "mail_address": "140 Riverbend Loop, Grand River University (fictional)"
+    },
+    {
+      "id": "maple",
+      "name": "Maple Hall",
+      "district": "Riverwalk",
+      "room_types": "Suites",
+      "features": "Community kitchen; river-facing study lounge",
+      "dining": "Maple Market",
+      "desk_phone": "XXX-6720-8985",
+      "desk_hours": {
+        "mon_fri": [
+          "08:00",
+          "22:00"
+        ],
+        "sat_sun": [
+          "10:00",
+          "20:00"
+        ]
+      },
+      "mail_address": "160 Riverbend Loop, Grand River University (fictional)"
+    },
+    {
+      "id": "heron",
+      "name": "Heron Hall",
+      "district": "South Terrace",
+      "room_types": "Traditional singles and doubles",
+      "features": "Gender-inclusive room cluster; makers lounge",
+      "dining": null,
+      "desk_phone": "XXX-6720-8986",
+      "desk_hours": {
+        "mon_fri": [
+          "08:00",
+          "22:00"
+        ],
+        "sat_sun": [
+          "10:00",
+          "20:00"
+        ]
+      },
+      "mail_address": "180 Riverbend Loop, Grand River University (fictional)"
+    },
+    {
+      "id": "stonebridge",
+      "name": "Stonebridge Hall",
+      "district": "South Terrace",
+      "room_types": "Suites",
+      "features": "Community kitchen; multipurpose studio",
+      "dining": "Stonebridge Kitchen",
+      "desk_phone": "XXX-6720-8987",
+      "desk_hours": {
+        "mon_fri": [
+          "08:00",
+          "22:00"
+        ],
+        "sat_sun": [
+          "10:00",
+          "20:00"
+        ]
+      },
+      "mail_address": "200 Riverbend Loop, Grand River University (fictional)"
+    },
+    {
+      "id": "cedar",
+      "name": "Cedar Court",
+      "district": "South Terrace",
+      "room_types": "Apartments",
+      "features": "Family housing; outdoor courtyard",
+      "dining": null,
+      "desk_phone": "XXX-6720-8988",
+      "desk_hours": {
+        "mon_fri": [
+          "08:00",
+          "22:00"
+        ],
+        "sat_sun": [
+          "10:00",
+          "20:00"
+        ]
+      },
+      "mail_address": "220 Riverbend Loop, Grand River University (fictional)"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "C01",
+      "name": "GRU Police Dispatch",
+      "phone": "XXX-6720-8900",
+      "purpose": "Campus safety dispatch in simulation",
+      "hours": "24/7"
+    },
+    {
+      "id": "C02",
+      "name": "GRU Police Non-Emergency",
+      "phone": "XXX-6720-8901",
+      "purpose": "Routine campus safety reports",
+      "hours": "24/7"
+    },
+    {
+      "id": "C03",
+      "name": "Residential Duty",
+      "phone": "XXX-6720-8902",
+      "purpose": "Overnight lockouts and urgent building concerns",
+      "hours": "Outside desk hours"
+    },
+    {
+      "id": "C04",
+      "name": "Housing Assignments",
+      "phone": "XXX-6720-8903",
+      "purpose": "Placements, room moves, contracts and billing",
+      "hours": "Weekdays 08:30–17:00"
+    },
+    {
+      "id": "C05",
+      "name": "Access Services",
+      "phone": "XXX-6720-8904",
+      "purpose": "Accessibility and housing accommodations",
+      "hours": "Weekdays 09:00–17:00"
+    },
+    {
+      "id": "C06",
+      "name": "Wellness Center",
+      "phone": "XXX-6720-8905",
+      "purpose": "Counseling scheduling and triage",
+      "hours": "Weekdays 09:00–17:00"
+    },
+    {
+      "id": "C07",
+      "name": "Student Care",
+      "phone": "XXX-6720-8906",
+      "purpose": "Support after disruption, crisis or hardship",
+      "hours": "Weekdays 09:00–17:00"
+    },
+    {
+      "id": "C08",
+      "name": "Facilities Help Desk",
+      "phone": "XXX-6720-8907",
+      "purpose": "Routine maintenance and repair tickets",
+      "hours": "Weekdays 08:00–17:00"
+    },
+    {
+      "id": "C09",
+      "name": "Dining Services",
+      "phone": "XXX-6720-8908",
+      "purpose": "Dining plans, ingredient verification and accommodations",
+      "hours": "Weekdays 08:30–17:00"
+    },
+    {
+      "id": "C10",
+      "name": "Student Programs Board",
+      "phone": "XXX-6720-8909",
+      "purpose": "Events, attendance and venue questions",
+      "hours": "Weekdays 10:00–17:00"
+    },
+    {
+      "id": "C11",
+      "name": "Campus IT",
+      "phone": "XXX-6720-8910",
+      "purpose": "Resident network and device support",
+      "hours": "Daily 08:00–20:00"
+    }
+  ]
+}

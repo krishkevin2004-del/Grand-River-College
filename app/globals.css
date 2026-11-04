@@ -1,0 +1,851 @@
+/* Ask Grand River: one small stylesheet, no framework.
+   Built phone-first; the @media block at the bottom adds laptop touches. */
+
+:root {
+  --green: #0b2a5b;
+  --green-dark: #08183a;
+  --green-tint: #fdf3d0;
+  --ink: #0a0d14;
+  --muted: #565e70;
+  --line: #d9dce6;
+  --bg: #f4f5f9;
+  --gold: #f2b705;
+  --black: #0a0d14;
+  --white: #ffffff;
+  --radius: 16px;
+  --col: 800px; /* width of the reading column */
+  --shadow: 0 1px 2px rgba(8, 24, 58, 0.06), 0 4px 14px rgba(8, 24, 58, 0.08);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+button,
+textarea,
+select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid #f2b705;
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* ── Page frame: header on top, conversation scrolls, input docked at the bottom ── */
+.app {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top: white strip (university name left, Get help right), then the green title band ── */
+.topbar {
+  flex-shrink: 0;
+}
+.university-strip {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  padding: max(10px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 10px
+    max(16px, env(safe-area-inset-left));
+}
+.strip-inner {
+  max-width: var(--col);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+/* The official logo, never stretched: only the width is set, height follows its own proportions */
+.university-wordmark {
+  display: block;
+  width: min(236px, calc(100vw - 150px));
+  height: auto;
+}
+.brand-band {
+  background: var(--green);
+  color: var(--white);
+  padding: 9px max(16px, env(safe-area-inset-right)) 9px max(16px, env(safe-area-inset-left));
+}
+.band-inner {
+  max-width: var(--col);
+  margin: 0 auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.14);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.brand-text {
+  min-width: 0;
+}
+.brand h1 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 650;
+}
+.brand small {
+  display: block;
+  margin-top: 1px;
+  font-size: 12px;
+  opacity: 0.8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* "Get help": always in the top-right corner, calm and inviting rather than alarming */
+.help-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid #e7c64a;
+  background: var(--green-tint);
+  color: var(--green-dark);
+  font-size: 15px;
+  font-weight: 600;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+}
+.help-btn svg {
+  color: var(--green);
+}
+.help-btn:hover {
+  background: #fbe7a0;
+  border-color: var(--green);
+}
+
+/* ── Conversation ── */
+.chat {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.chat-inner {
+  max-width: var(--col);
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 20px max(16px, env(safe-area-inset-right)) 12px max(16px, env(safe-area-inset-left));
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.welcome {
+  margin: auto;
+  max-width: 480px;
+  padding: 24px 0;
+  text-align: center;
+}
+.welcome-mark {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  border-radius: 18px;
+  background: var(--green-tint);
+  color: var(--green);
+  display: grid;
+  place-items: center;
+}
+.welcome h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: var(--green-dark);
+}
+.welcome p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.bubble {
+  max-width: 88%;
+  padding: 12px 15px;
+  border-radius: var(--radius);
+  line-height: 1.55;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.bubble p {
+  margin: 0;
+}
+.bubble p + p {
+  margin-top: 8px;
+}
+.bubble.user {
+  align-self: flex-end;
+  background: var(--green);
+  color: var(--white);
+  border-bottom-right-radius: 5px;
+  white-space: pre-wrap;
+}
+.bubble.assistant {
+  align-self: flex-start;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-bottom-left-radius: 5px;
+  box-shadow: var(--shadow);
+}
+.bubble.assistant p {
+  white-space: pre-wrap;
+}
+.bubble.handoff {
+  border-left: 4px solid var(--green);
+}
+.bubble.typing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+}
+.dots {
+  display: inline-flex;
+  gap: 4px;
+}
+.dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  opacity: 0.35;
+  animation: pulse 1.2s infinite ease-in-out;
+}
+.dots i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.dots i:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes pulse {
+  0%,
+  80%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.85);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 14px;
+}
+
+/* ── Sources: plain links straight to the page ── */
+.sources {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+.sources-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.sources a {
+  color: var(--green);
+  font-weight: 600;
+  padding: 6px 0;
+  text-decoration: none;
+}
+.sources a:hover {
+  text-decoration: underline;
+}
+
+.feedback {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.feedback button {
+  min-width: 40px;
+  min-height: 36px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.link {
+  background: none;
+  border: none;
+  padding: 8px 0;
+  margin-top: 4px;
+  color: var(--green);
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+/* ── Chips (small rounded buttons) ── */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 600;
+}
+.chip:hover {
+  border-color: var(--green);
+}
+.chip.inline {
+  margin-top: 10px;
+  background: var(--green-tint);
+  border-color: transparent;
+}
+
+/* ── Input dock ── */
+.dock {
+  flex-shrink: 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  padding: 10px max(16px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom))
+    max(16px, env(safe-area-inset-left));
+}
+.dock-inner {
+  max-width: var(--col);
+  margin: 0 auto;
+}
+.quick {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.count {
+  font-size: 12px;
+  color: var(--muted);
+}
+.composer {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 5px 5px 5px 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+.composer:focus-within {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(242, 183, 5, 0.35);
+}
+.composer textarea {
+  flex: 1;
+  min-width: 0;
+  max-height: 140px;
+  padding: 10px 0;
+  border: 0;
+  outline: 0;
+  resize: none;
+  background: transparent;
+  color: var(--ink);
+  font-size: 16px; /* 16px stops iPhones zooming in when you tap the box */
+  line-height: 1.4;
+}
+.composer textarea::placeholder {
+  color: #8b90a0;
+}
+.send {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--white);
+  transition: background 0.15s;
+}
+.send:hover:not(:disabled) {
+  background: var(--green-dark);
+}
+.send:disabled {
+  background: #b8bdcc;
+  cursor: default;
+}
+.fineprint {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ── Calls to action ── */
+.call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: var(--green);
+  color: var(--white);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+.call:hover {
+  background: var(--green-dark);
+}
+.call.secondary {
+  background: var(--green-tint);
+  color: var(--green-dark);
+}
+.call.secondary:hover {
+  background: #fbe7a0;
+}
+
+/* ── Hall picker and hall contacts ── */
+.hall-picker {
+  margin-top: 10px;
+}
+.hall-picker select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 16px;
+}
+.hall-card {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sc {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+/* ── Help sheet (bottom sheet on phones, centered card on laptops) ── */
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(10, 13, 20, 0.65);
+  animation: fade 0.15s ease-out;
+}
+.sheet {
+  width: 100%;
+  max-width: 540px;
+  max-height: 92dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 18px max(18px, env(safe-area-inset-bottom));
+  background: var(--white);
+  border-radius: 22px 22px 0 0;
+  outline: none;
+  animation: rise 0.2s ease-out;
+}
+.sheet-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 0 10px;
+  background: var(--white);
+}
+.sheet-head h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.25;
+  color: var(--green-dark);
+}
+.icon-btn {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--green-tint);
+  color: var(--green-dark);
+}
+.sheet-message {
+  margin: 0 0 16px;
+  line-height: 1.55;
+}
+.resources {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resource {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.resource-text strong {
+  display: block;
+}
+.resource-text span {
+  display: block;
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.resources-heading {
+  margin: 4px 0 10px;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.back {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--muted);
+  font-weight: 600;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rise {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+
+/* Narrow phones: the small subtitle would be cut off, so drop it */
+@media (max-width: 480px) {
+  .brand small {
+    display: none;
+  }
+  .brand h1 {
+    font-size: 16px;
+  }
+  .help-btn {
+    padding: 0 14px;
+  }
+}
+
+/* ── Laptops and tablets ── */
+@media (min-width: 700px) {
+  .university-strip {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .university-wordmark {
+    width: 280px;
+  }
+  .brand-band {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .brand h1 {
+    font-size: 20px;
+  }
+  .brand small {
+    font-size: 13px;
+  }
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+  .chat-inner {
+    padding-top: 28px;
+    gap: 16px;
+  }
+  .bubble {
+    max-width: 78%;
+    padding: 14px 18px;
+  }
+  .welcome h2 {
+    font-size: 28px;
+  }
+  .sheet-backdrop {
+    align-items: center;
+    padding: 24px;
+  }
+  .sheet {
+    border-radius: 22px;
+    padding: 0 24px 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+  .sc {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .sc .call {
+    min-width: 190px;
+  }
+}
+
+/* ── Wide screens only: logo and title sit at the far left, Get help at the far right.
+      Phones and tablets keep the centered layout above. ── */
+@media (min-width: 900px) {
+  .strip-inner,
+  .band-inner {
+    max-width: none;
+    margin: 0;
+  }
+  .university-strip,
+  .brand-band {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.hall-card .hours {
+  margin: -4px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--green);
+}
+
+a.chip {
+  text-decoration: none;
+}
+
+
+.hall-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.hall-chips .chip {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  padding: 8px 14px;
+  min-height: 44px;
+  text-align: left;
+}
+.chip small {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.university-wordmark { width: auto; height: auto; color: #0a0d14; font-size: 1rem; }
+.examples { justify-content: center; flex-wrap: wrap; margin-top: 1rem; }
+.sources details { color: var(--green); }
+.sources summary { cursor: pointer; }
+.sources details p { color: var(--ink, #14273d); margin: .35rem 0 .6rem; }
+
+/* ── Mascot and simulated contact numbers ── */
+.mascot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.mascot-bubble {
+  position: relative;
+  padding: 10px 18px;
+  border-radius: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  color: var(--green-dark);
+  font-weight: 650;
+  font-size: 18px;
+}
+.mascot-bubble::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 14px;
+  height: 14px;
+  background: var(--white);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transform: translateX(-50%) rotate(45deg);
+}
+.mascot-art {
+  width: 150px;
+  height: auto;
+  margin-top: 8px;
+}
+.mascot-wave {
+  transform-origin: 146px 184px;
+  animation: wave 1.6s ease-in-out 2;
+}
+@keyframes wave {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-14deg); }
+  75% { transform: rotate(8deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mascot-wave { animation: none; }
+}
+.sim-note {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.sim-lines ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sim-lines li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--green-tint);
+  font-size: 14px;
+}
+.sim-lines code {
+  font-family: ui-monospace, Menlo, monospace;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Palette: deep blue and black with gold accents */
+.brand-band { border-bottom: 3px solid var(--gold); background: linear-gradient(90deg, var(--green-dark), var(--green)); }
+.university-strip { border-bottom: 1px solid var(--black); }
+.bubble.user { background: var(--black); border-bottom: 2px solid var(--gold); }
+.send:not(:disabled) { background: var(--green); }
+.chip:hover { border-color: var(--gold); background: var(--green-tint); }
+.help-btn svg { color: #b58900; }
+.mascot-bubble { border-color: var(--gold); }
+.mascot-bubble::after { border-color: var(--gold); }
+
+.strip-quote {
+  flex: 1;
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  color: #8a6a00;
+  min-width: 0;
+}
+@media (max-width: 720px) {
+  .strip-inner { flex-wrap: wrap; row-gap: 2px; }
+  .strip-quote { order: 3; flex-basis: 100%; text-align: left; font-size: 13px; line-height: 1.3; }
+  .examples { flex-direction: column; align-items: stretch; }
+  .examples .chip { justify-content: center; text-align: center; white-space: normal; min-height: 46px; }
+  .mascot-art { width: 130px; }
+}
+
+/* Small and short phones: keep the header on one row and leave room for the chat */
+@media (max-width: 380px) {
+  .university-wordmark { font-size: 0.85rem; white-space: nowrap; flex-shrink: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  .help-btn { min-height: 38px; padding: 0 12px; font-size: 14px; gap: 5px; }
+  .strip-quote { font-size: 12px; }
+  .mascot-bubble { font-size: 16px; padding: 8px 14px; }
+}
+@media (max-height: 700px) and (max-width: 720px) {
+  .mascot-art { width: 90px; margin-top: 4px; }
+  .welcome { padding: 8px 0; }
+  .mascot { margin-bottom: 6px; }
+  .examples { gap: 6px; margin-top: 8px; }
+  .examples .chip { min-height: 40px; }
+  .fineprint { font-size: 11px; }
+}

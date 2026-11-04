@@ -1,0 +1,2986 @@
+{
+  "university": "Grand River University",
+  "fictional": true,
+  "timezone": "America/New_York",
+  "academic_year": "2026–27",
+  "as_of": "2026-11-04",
+  "provenance": "Fictional Grand River dining schedules and menus. Six generic dish names were reused from the supplied test fixture. Their dietary and allergen metadata is unknown.",
+  "menu_start": "2026-11-02",
+  "menu_end": "2026-11-15",
+  "venues": [
+    {
+      "id": "alder-commons",
+      "hall_id": "alder",
+      "name": "Alder Commons",
+      "weekday_hours": [
+        "07:00",
+        "21:00"
+      ],
+      "weekend_hours": [
+        "09:00",
+        "20:00"
+      ],
+      "takeout": true
+    },
+    {
+      "id": "maple-market",
+      "hall_id": "maple",
+      "name": "Maple Market",
+      "weekday_hours": [
+        "07:30",
+        "20:00"
+      ],
+      "weekend_hours": [
+        "09:30",
+        "19:00"
+      ],
+      "takeout": true
+    },
+    {
+      "id": "stonebridge-kitchen",
+      "hall_id": "stonebridge",
+      "name": "Stonebridge Kitchen",
+      "weekday_hours": [
+        "11:00",
+        "23:30"
+      ],
+      "weekend_hours": [
+        "11:00",
+        "23:30"
+      ],
+      "takeout": false
+    }
+  ],
+  "items": [
+    {
+      "id": "M001",
+      "name": "Blueberry pancakes",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M002",
+      "name": "Spinach and cheddar scramble",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "egg",
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M003",
+      "name": "Potato and pepper hash",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M004",
+      "name": "Turkey sausage patties",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M005",
+      "name": "Maple overnight oats",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M006",
+      "name": "Apple cinnamon French toast",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M007",
+      "name": "Yogurt and granola cups",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M008",
+      "name": "Tofu breakfast scramble",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "soy"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M009",
+      "name": "Black bean breakfast tacos",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "egg",
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M010",
+      "name": "Grilled chicken sandwich",
+      "cuisine": "American",
+      "station": "Grill",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "wheat"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M011",
+      "name": "Smoky mushroom burger",
+      "cuisine": "American",
+      "station": "Grill",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "soy"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M012",
+      "name": "Baked mac and cheese",
+      "cuisine": "American",
+      "station": "Grill",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M013",
+      "name": "Turkey and wild rice soup",
+      "cuisine": "American",
+      "station": "Grill",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M014",
+      "name": "Cajun roasted catfish",
+      "cuisine": "American",
+      "station": "Grill",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "fish"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M015",
+      "name": "Pulled chicken and slaw",
+      "cuisine": "American",
+      "station": "Grill",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "egg"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M016",
+      "name": "Roasted vegetable grain bowl",
+      "cuisine": "American",
+      "station": "Grill",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "wheat"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M017",
+      "name": "Poblano and black bean tacos",
+      "cuisine": "Mexican",
+      "station": "Comal",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M018",
+      "name": "Chicken tinga bowl",
+      "cuisine": "Mexican",
+      "station": "Comal",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M019",
+      "name": "Pork carnitas tacos",
+      "cuisine": "Mexican",
+      "station": "Comal",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M020",
+      "name": "Roasted squash enchiladas",
+      "cuisine": "Mexican",
+      "station": "Comal",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M021",
+      "name": "Chana masala with basmati",
+      "cuisine": "Indian",
+      "station": "Spice Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M022",
+      "name": "Chicken tikka masala",
+      "cuisine": "Indian",
+      "station": "Spice Kitchen",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M023",
+      "name": "Palak paneer",
+      "cuisine": "Indian",
+      "station": "Spice Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M024",
+      "name": "Aloo gobi",
+      "cuisine": "Indian",
+      "station": "Spice Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M025",
+      "name": "Coconut dal",
+      "cuisine": "Indian",
+      "station": "Spice Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M026",
+      "name": "Ginger scallion tofu",
+      "cuisine": "Chinese",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "soy",
+        "wheat"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M027",
+      "name": "Orange chicken",
+      "cuisine": "Chinese",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "wheat",
+        "soy",
+        "egg"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M028",
+      "name": "Vegetable lo mein",
+      "cuisine": "Chinese",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "soy",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M029",
+      "name": "Miso vegetable ramen",
+      "cuisine": "Japanese",
+      "station": "Noodle Bar",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "soy",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M030",
+      "name": "Salmon teriyaki rice bowl",
+      "cuisine": "Japanese",
+      "station": "Noodle Bar",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "fish",
+        "soy",
+        "wheat"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M031",
+      "name": "Edamame soba salad",
+      "cuisine": "Japanese",
+      "station": "Noodle Bar",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "soy",
+        "wheat",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M032",
+      "name": "Mushroom bibimbap",
+      "cuisine": "Korean",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "soy",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M033",
+      "name": "Gochujang chicken",
+      "cuisine": "Korean",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "soy",
+        "wheat",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M034",
+      "name": "Kimchi fried rice with egg",
+      "cuisine": "Korean",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "egg",
+        "soy",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M035",
+      "name": "Thai basil tofu",
+      "cuisine": "Thai",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "soy"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M036",
+      "name": "Chicken green curry",
+      "cuisine": "Thai",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "fish"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M037",
+      "name": "Peanut noodle salad",
+      "cuisine": "Thai",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "peanut",
+        "wheat",
+        "soy"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M038",
+      "name": "Lemongrass tofu noodle bowl",
+      "cuisine": "Vietnamese",
+      "station": "Noodle Bar",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "soy"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M039",
+      "name": "Ginger chicken pho",
+      "cuisine": "Vietnamese",
+      "station": "Noodle Bar",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "fish"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M040",
+      "name": "Tofu and herb rice rolls",
+      "cuisine": "Vietnamese",
+      "station": "Noodle Bar",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "soy",
+        "peanut"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M041",
+      "name": "Chickpea falafel pita",
+      "cuisine": "Middle Eastern",
+      "station": "Levant",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M042",
+      "name": "Chicken shawarma plate",
+      "cuisine": "Middle Eastern",
+      "station": "Levant",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "milk",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M043",
+      "name": "Lentil mujaddara",
+      "cuisine": "Middle Eastern",
+      "station": "Levant",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M044",
+      "name": "Lemon herb chicken with potatoes",
+      "cuisine": "Greek",
+      "station": "Mediterranean",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M045",
+      "name": "Chickpea and feta salad",
+      "cuisine": "Greek",
+      "station": "Mediterranean",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M046",
+      "name": "Spinach spanakopita",
+      "cuisine": "Greek",
+      "station": "Mediterranean",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "milk",
+        "egg",
+        "wheat"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M047",
+      "name": "Margherita flatbread",
+      "cuisine": "Italian",
+      "station": "Hearth",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M048",
+      "name": "Penne arrabbiata",
+      "cuisine": "Italian",
+      "station": "Hearth",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "wheat"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M049",
+      "name": "Turkey meatball marinara",
+      "cuisine": "Italian",
+      "station": "Hearth",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "wheat",
+        "egg"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M050",
+      "name": "Mushroom risotto",
+      "cuisine": "Italian",
+      "station": "Hearth",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M051",
+      "name": "Vegetable jollof rice",
+      "cuisine": "West African",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M052",
+      "name": "Chicken yassa",
+      "cuisine": "West African",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M053",
+      "name": "Peanut and sweet potato stew",
+      "cuisine": "West African",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "peanut"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M054",
+      "name": "Misir wat and greens",
+      "cuisine": "Ethiopian",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M055",
+      "name": "Berbere chicken with rice",
+      "cuisine": "Ethiopian",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M056",
+      "name": "Turmeric cabbage and potatoes",
+      "cuisine": "Ethiopian",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M057",
+      "name": "Jerk chicken with rice and peas",
+      "cuisine": "Caribbean",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M058",
+      "name": "Coconut callaloo",
+      "cuisine": "Caribbean",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M059",
+      "name": "Black bean and plantain bowl",
+      "cuisine": "Caribbean",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M060",
+      "name": "Peruvian-style roast chicken",
+      "cuisine": "Latin American",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M061",
+      "name": "Cuban black beans and rice",
+      "cuisine": "Latin American",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M062",
+      "name": "Argentine spinach empanada",
+      "cuisine": "Latin American",
+      "station": "Global Kitchen",
+      "period": "main",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M063",
+      "name": "Cheese flatbread",
+      "cuisine": "American",
+      "station": "After Hours",
+      "period": "late_night",
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M064",
+      "name": "Chicken quesadilla",
+      "cuisine": "American",
+      "station": "After Hours",
+      "period": "late_night",
+      "dietary_tags": [],
+      "recorded_allergens": [
+        "wheat",
+        "milk"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M065",
+      "name": "Hummus and vegetable wrap",
+      "cuisine": "American",
+      "station": "After Hours",
+      "period": "late_night",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "wheat",
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M066",
+      "name": "Bean and rice bowl",
+      "cuisine": "American",
+      "station": "After Hours",
+      "period": "late_night",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M067",
+      "name": "Lemon garlic chicken bowl",
+      "cuisine": "Levantine",
+      "station": "Levant",
+      "period": "main",
+      "dietary_tags": [
+        "halal_certified_preparation"
+      ],
+      "recorded_allergens": [],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M068",
+      "name": "Roasted cauliflower tahini bowl",
+      "cuisine": "Levantine",
+      "station": "Levant",
+      "period": "main",
+      "dietary_tags": [
+        "vegan"
+      ],
+      "recorded_allergens": [
+        "sesame"
+      ],
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M069",
+      "name": "Black Bean Burger",
+      "cuisine": "American",
+      "station": "Grill",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": null,
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M070",
+      "name": "Cheese Pizza",
+      "cuisine": "American",
+      "station": "Hearth",
+      "period": "late_night",
+      "dietary_tags": [],
+      "recorded_allergens": null,
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M071",
+      "name": "Indian Basmati Rice",
+      "cuisine": "Indian",
+      "station": "Spice Kitchen",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": null,
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M072",
+      "name": "Thai Vegetable Dumpling",
+      "cuisine": "Thai",
+      "station": "Wok",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": null,
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M073",
+      "name": "Tofu Scramble",
+      "cuisine": "American",
+      "station": "Breakfast",
+      "period": "breakfast",
+      "dietary_tags": [],
+      "recorded_allergens": null,
+      "shared_equipment": "unknown"
+    },
+    {
+      "id": "M074",
+      "name": "Chocolate Chip Cookie",
+      "cuisine": "American",
+      "station": "Dessert",
+      "period": "main",
+      "dietary_tags": [],
+      "recorded_allergens": null,
+      "shared_equipment": "unknown"
+    }
+  ],
+  "schedule_overrides": [
+    {
+      "date": "2026-11-11",
+      "venue_id": "maple-market",
+      "status": "closed",
+      "reason": "Scheduled kitchen maintenance"
+    }
+  ],
+  "menus": [
+    {
+      "id": "2026-11-02/alder-commons/breakfast",
+      "date": "2026-11-02",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004"
+      ]
+    },
+    {
+      "id": "2026-11-02/alder-commons/lunch",
+      "date": "2026-11-02",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M023",
+        "M024",
+        "M025",
+        "M026",
+        "M027",
+        "M028",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-02/alder-commons/dinner",
+      "date": "2026-11-02",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M036",
+        "M037",
+        "M038",
+        "M039",
+        "M040",
+        "M041",
+        "M042"
+      ]
+    },
+    {
+      "id": "2026-11-02/maple-market/breakfast",
+      "date": "2026-11-02",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M073"
+      ]
+    },
+    {
+      "id": "2026-11-02/maple-market/lunch",
+      "date": "2026-11-02",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M034",
+        "M035",
+        "M036",
+        "M037",
+        "M038",
+        "M039",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-02/maple-market/dinner",
+      "date": "2026-11-02",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M047",
+        "M048",
+        "M049",
+        "M050",
+        "M051",
+        "M052",
+        "M053",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-02/stonebridge-kitchen/lunch",
+      "date": "2026-11-02",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M032",
+        "M033",
+        "M034",
+        "M035",
+        "M036",
+        "M037"
+      ]
+    },
+    {
+      "id": "2026-11-02/stonebridge-kitchen/dinner",
+      "date": "2026-11-02",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M045",
+        "M046",
+        "M047",
+        "M048",
+        "M049",
+        "M050",
+        "M051",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-02/stonebridge-kitchen/late_night",
+      "date": "2026-11-02",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M063",
+        "M064",
+        "M065"
+      ]
+    },
+    {
+      "id": "2026-11-03/alder-commons/breakfast",
+      "date": "2026-11-03",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M008",
+        "M009",
+        "M001",
+        "M002"
+      ]
+    },
+    {
+      "id": "2026-11-03/alder-commons/lunch",
+      "date": "2026-11-03",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M030",
+        "M031",
+        "M032",
+        "M033",
+        "M034",
+        "M035"
+      ]
+    },
+    {
+      "id": "2026-11-03/alder-commons/dinner",
+      "date": "2026-11-03",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M043",
+        "M044",
+        "M045",
+        "M046",
+        "M047",
+        "M048",
+        "M049"
+      ]
+    },
+    {
+      "id": "2026-11-03/maple-market/breakfast",
+      "date": "2026-11-03",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004"
+      ]
+    },
+    {
+      "id": "2026-11-03/maple-market/lunch",
+      "date": "2026-11-03",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M041",
+        "M042",
+        "M043",
+        "M044",
+        "M045",
+        "M046",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-03/maple-market/dinner",
+      "date": "2026-11-03",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M054",
+        "M055",
+        "M056",
+        "M057",
+        "M058",
+        "M059",
+        "M060"
+      ]
+    },
+    {
+      "id": "2026-11-03/stonebridge-kitchen/lunch",
+      "date": "2026-11-03",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M039",
+        "M040",
+        "M041",
+        "M042",
+        "M043",
+        "M044",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-03/stonebridge-kitchen/dinner",
+      "date": "2026-11-03",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M052",
+        "M053",
+        "M054",
+        "M055",
+        "M056",
+        "M057",
+        "M058",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-03/stonebridge-kitchen/late_night",
+      "date": "2026-11-03",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M066",
+        "M063",
+        "M064"
+      ]
+    },
+    {
+      "id": "2026-11-04/alder-commons/breakfast",
+      "date": "2026-11-04",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M006",
+        "M007",
+        "M008",
+        "M009"
+      ]
+    },
+    {
+      "id": "2026-11-04/alder-commons/lunch",
+      "date": "2026-11-04",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M037",
+        "M038",
+        "M039",
+        "M040",
+        "M041",
+        "M042"
+      ]
+    },
+    {
+      "id": "2026-11-04/alder-commons/dinner",
+      "date": "2026-11-04",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M050",
+        "M051",
+        "M052",
+        "M053",
+        "M054",
+        "M055",
+        "M056",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-04/maple-market/breakfast",
+      "date": "2026-11-04",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M008",
+        "M009",
+        "M001",
+        "M002"
+      ]
+    },
+    {
+      "id": "2026-11-04/maple-market/lunch",
+      "date": "2026-11-04",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M048",
+        "M049",
+        "M050",
+        "M051",
+        "M052",
+        "M053"
+      ]
+    },
+    {
+      "id": "2026-11-04/maple-market/dinner",
+      "date": "2026-11-04",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M061",
+        "M062",
+        "M067",
+        "M068",
+        "M010",
+        "M011",
+        "M012"
+      ]
+    },
+    {
+      "id": "2026-11-04/stonebridge-kitchen/lunch",
+      "date": "2026-11-04",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M046",
+        "M047",
+        "M048",
+        "M049",
+        "M050",
+        "M051",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-04/stonebridge-kitchen/dinner",
+      "date": "2026-11-04",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M059",
+        "M060",
+        "M061",
+        "M062",
+        "M067",
+        "M068",
+        "M010"
+      ]
+    },
+    {
+      "id": "2026-11-04/stonebridge-kitchen/late_night",
+      "date": "2026-11-04",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M065",
+        "M066",
+        "M063"
+      ]
+    },
+    {
+      "id": "2026-11-05/alder-commons/breakfast",
+      "date": "2026-11-05",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M004",
+        "M005",
+        "M006",
+        "M007"
+      ]
+    },
+    {
+      "id": "2026-11-05/alder-commons/lunch",
+      "date": "2026-11-05",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M044",
+        "M045",
+        "M046",
+        "M047",
+        "M048",
+        "M049",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-05/alder-commons/dinner",
+      "date": "2026-11-05",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M057",
+        "M058",
+        "M059",
+        "M060",
+        "M061",
+        "M062",
+        "M067",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-05/maple-market/breakfast",
+      "date": "2026-11-05",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M006",
+        "M007",
+        "M008",
+        "M009"
+      ]
+    },
+    {
+      "id": "2026-11-05/maple-market/lunch",
+      "date": "2026-11-05",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M055",
+        "M056",
+        "M057",
+        "M058",
+        "M059",
+        "M060"
+      ]
+    },
+    {
+      "id": "2026-11-05/maple-market/dinner",
+      "date": "2026-11-05",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-05/stonebridge-kitchen/lunch",
+      "date": "2026-11-05",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M053",
+        "M054",
+        "M055",
+        "M056",
+        "M057",
+        "M058"
+      ]
+    },
+    {
+      "id": "2026-11-05/stonebridge-kitchen/dinner",
+      "date": "2026-11-05",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017"
+      ]
+    },
+    {
+      "id": "2026-11-05/stonebridge-kitchen/late_night",
+      "date": "2026-11-05",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M064",
+        "M065",
+        "M066"
+      ]
+    },
+    {
+      "id": "2026-11-06/alder-commons/breakfast",
+      "date": "2026-11-06",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M002",
+        "M003",
+        "M004",
+        "M005"
+      ]
+    },
+    {
+      "id": "2026-11-06/alder-commons/lunch",
+      "date": "2026-11-06",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M051",
+        "M052",
+        "M053",
+        "M054",
+        "M055",
+        "M056",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-06/alder-commons/dinner",
+      "date": "2026-11-06",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M068",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015"
+      ]
+    },
+    {
+      "id": "2026-11-06/maple-market/breakfast",
+      "date": "2026-11-06",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M073"
+      ]
+    },
+    {
+      "id": "2026-11-06/maple-market/lunch",
+      "date": "2026-11-06",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M062",
+        "M067",
+        "M068",
+        "M010",
+        "M011",
+        "M012",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-06/maple-market/dinner",
+      "date": "2026-11-06",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M025",
+        "M026",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-06/stonebridge-kitchen/lunch",
+      "date": "2026-11-06",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M060",
+        "M061",
+        "M062",
+        "M067",
+        "M068",
+        "M010"
+      ]
+    },
+    {
+      "id": "2026-11-06/stonebridge-kitchen/dinner",
+      "date": "2026-11-06",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M018",
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-06/stonebridge-kitchen/late_night",
+      "date": "2026-11-06",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M063",
+        "M064",
+        "M065",
+        "M070"
+      ]
+    },
+    {
+      "id": "2026-11-07/alder-commons/breakfast",
+      "date": "2026-11-07",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "09:00",
+      "end": "10:45",
+      "item_ids": [
+        "M009",
+        "M001",
+        "M002",
+        "M003"
+      ]
+    },
+    {
+      "id": "2026-11-07/alder-commons/lunch",
+      "date": "2026-11-07",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M058",
+        "M059",
+        "M060",
+        "M061",
+        "M062",
+        "M067"
+      ]
+    },
+    {
+      "id": "2026-11-07/alder-commons/dinner",
+      "date": "2026-11-07",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020",
+        "M021",
+        "M022"
+      ]
+    },
+    {
+      "id": "2026-11-07/maple-market/breakfast",
+      "date": "2026-11-07",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "09:30",
+      "end": "10:45",
+      "item_ids": [
+        "M002",
+        "M003",
+        "M004",
+        "M005"
+      ]
+    },
+    {
+      "id": "2026-11-07/maple-market/lunch",
+      "date": "2026-11-07",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-07/maple-market/dinner",
+      "date": "2026-11-07",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "19:00",
+      "item_ids": [
+        "M027",
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M032",
+        "M033"
+      ]
+    },
+    {
+      "id": "2026-11-07/stonebridge-kitchen/lunch",
+      "date": "2026-11-07",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-07/stonebridge-kitchen/dinner",
+      "date": "2026-11-07",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M025",
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-07/stonebridge-kitchen/late_night",
+      "date": "2026-11-07",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M066",
+        "M063",
+        "M064"
+      ]
+    },
+    {
+      "id": "2026-11-08/alder-commons/breakfast",
+      "date": "2026-11-08",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "09:00",
+      "end": "10:45",
+      "item_ids": [
+        "M007",
+        "M008",
+        "M009",
+        "M001"
+      ]
+    },
+    {
+      "id": "2026-11-08/alder-commons/lunch",
+      "date": "2026-11-08",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015"
+      ]
+    },
+    {
+      "id": "2026-11-08/alder-commons/dinner",
+      "date": "2026-11-08",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M023",
+        "M024",
+        "M025",
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-08/maple-market/breakfast",
+      "date": "2026-11-08",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "09:30",
+      "end": "10:45",
+      "item_ids": [
+        "M009",
+        "M001",
+        "M002",
+        "M003"
+      ]
+    },
+    {
+      "id": "2026-11-08/maple-market/lunch",
+      "date": "2026-11-08",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M025",
+        "M026"
+      ]
+    },
+    {
+      "id": "2026-11-08/maple-market/dinner",
+      "date": "2026-11-08",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "19:00",
+      "item_ids": [
+        "M034",
+        "M035",
+        "M036",
+        "M037",
+        "M038",
+        "M039",
+        "M040"
+      ]
+    },
+    {
+      "id": "2026-11-08/stonebridge-kitchen/lunch",
+      "date": "2026-11-08",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-08/stonebridge-kitchen/dinner",
+      "date": "2026-11-08",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M032",
+        "M033",
+        "M034",
+        "M035",
+        "M036",
+        "M037",
+        "M038"
+      ]
+    },
+    {
+      "id": "2026-11-08/stonebridge-kitchen/late_night",
+      "date": "2026-11-08",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M065",
+        "M066",
+        "M063"
+      ]
+    },
+    {
+      "id": "2026-11-09/alder-commons/breakfast",
+      "date": "2026-11-09",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M005",
+        "M006",
+        "M007",
+        "M008"
+      ]
+    },
+    {
+      "id": "2026-11-09/alder-commons/lunch",
+      "date": "2026-11-09",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M017",
+        "M018",
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-09/alder-commons/dinner",
+      "date": "2026-11-09",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M030",
+        "M031",
+        "M032",
+        "M033",
+        "M034",
+        "M035",
+        "M036",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-09/maple-market/breakfast",
+      "date": "2026-11-09",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M007",
+        "M008",
+        "M009",
+        "M001"
+      ]
+    },
+    {
+      "id": "2026-11-09/maple-market/lunch",
+      "date": "2026-11-09",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M032",
+        "M033"
+      ]
+    },
+    {
+      "id": "2026-11-09/maple-market/dinner",
+      "date": "2026-11-09",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M041",
+        "M042",
+        "M043",
+        "M044",
+        "M045",
+        "M046",
+        "M047",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-09/stonebridge-kitchen/lunch",
+      "date": "2026-11-09",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M030",
+        "M031"
+      ]
+    },
+    {
+      "id": "2026-11-09/stonebridge-kitchen/dinner",
+      "date": "2026-11-09",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M039",
+        "M040",
+        "M041",
+        "M042",
+        "M043",
+        "M044",
+        "M045"
+      ]
+    },
+    {
+      "id": "2026-11-09/stonebridge-kitchen/late_night",
+      "date": "2026-11-09",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M064",
+        "M065",
+        "M066"
+      ]
+    },
+    {
+      "id": "2026-11-10/alder-commons/breakfast",
+      "date": "2026-11-10",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M003",
+        "M004",
+        "M005",
+        "M006"
+      ]
+    },
+    {
+      "id": "2026-11-10/alder-commons/lunch",
+      "date": "2026-11-10",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M024",
+        "M025",
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-10/alder-commons/dinner",
+      "date": "2026-11-10",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M037",
+        "M038",
+        "M039",
+        "M040",
+        "M041",
+        "M042",
+        "M043"
+      ]
+    },
+    {
+      "id": "2026-11-10/maple-market/breakfast",
+      "date": "2026-11-10",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M073"
+      ]
+    },
+    {
+      "id": "2026-11-10/maple-market/lunch",
+      "date": "2026-11-10",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M035",
+        "M036",
+        "M037",
+        "M038",
+        "M039",
+        "M040",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-10/maple-market/dinner",
+      "date": "2026-11-10",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M048",
+        "M049",
+        "M050",
+        "M051",
+        "M052",
+        "M053",
+        "M054",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-10/stonebridge-kitchen/lunch",
+      "date": "2026-11-10",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M033",
+        "M034",
+        "M035",
+        "M036",
+        "M037",
+        "M038"
+      ]
+    },
+    {
+      "id": "2026-11-10/stonebridge-kitchen/dinner",
+      "date": "2026-11-10",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M046",
+        "M047",
+        "M048",
+        "M049",
+        "M050",
+        "M051",
+        "M052",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-10/stonebridge-kitchen/late_night",
+      "date": "2026-11-10",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M063",
+        "M064",
+        "M065"
+      ]
+    },
+    {
+      "id": "2026-11-11/alder-commons/breakfast",
+      "date": "2026-11-11",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004"
+      ]
+    },
+    {
+      "id": "2026-11-11/alder-commons/lunch",
+      "date": "2026-11-11",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M031",
+        "M032",
+        "M033",
+        "M034",
+        "M035",
+        "M036"
+      ]
+    },
+    {
+      "id": "2026-11-11/alder-commons/dinner",
+      "date": "2026-11-11",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M044",
+        "M045",
+        "M046",
+        "M047",
+        "M048",
+        "M049",
+        "M050"
+      ]
+    },
+    {
+      "id": "2026-11-11/stonebridge-kitchen/lunch",
+      "date": "2026-11-11",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M040",
+        "M041",
+        "M042",
+        "M043",
+        "M044",
+        "M045",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-11/stonebridge-kitchen/dinner",
+      "date": "2026-11-11",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M053",
+        "M054",
+        "M055",
+        "M056",
+        "M057",
+        "M058",
+        "M059"
+      ]
+    },
+    {
+      "id": "2026-11-11/stonebridge-kitchen/late_night",
+      "date": "2026-11-11",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M066",
+        "M063",
+        "M064"
+      ]
+    },
+    {
+      "id": "2026-11-12/alder-commons/breakfast",
+      "date": "2026-11-12",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M008",
+        "M009",
+        "M001",
+        "M002"
+      ]
+    },
+    {
+      "id": "2026-11-12/alder-commons/lunch",
+      "date": "2026-11-12",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M038",
+        "M039",
+        "M040",
+        "M041",
+        "M042",
+        "M043",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-12/alder-commons/dinner",
+      "date": "2026-11-12",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M051",
+        "M052",
+        "M053",
+        "M054",
+        "M055",
+        "M056",
+        "M057",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-12/maple-market/breakfast",
+      "date": "2026-11-12",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004"
+      ]
+    },
+    {
+      "id": "2026-11-12/maple-market/lunch",
+      "date": "2026-11-12",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M049",
+        "M050",
+        "M051",
+        "M052",
+        "M053",
+        "M054"
+      ]
+    },
+    {
+      "id": "2026-11-12/maple-market/dinner",
+      "date": "2026-11-12",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M062",
+        "M067",
+        "M068",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-12/stonebridge-kitchen/lunch",
+      "date": "2026-11-12",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M047",
+        "M048",
+        "M049",
+        "M050",
+        "M051",
+        "M052"
+      ]
+    },
+    {
+      "id": "2026-11-12/stonebridge-kitchen/dinner",
+      "date": "2026-11-12",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M060",
+        "M061",
+        "M062",
+        "M067",
+        "M068",
+        "M010",
+        "M011"
+      ]
+    },
+    {
+      "id": "2026-11-12/stonebridge-kitchen/late_night",
+      "date": "2026-11-12",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M065",
+        "M066",
+        "M063"
+      ]
+    },
+    {
+      "id": "2026-11-13/alder-commons/breakfast",
+      "date": "2026-11-13",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "07:00",
+      "end": "10:45",
+      "item_ids": [
+        "M006",
+        "M007",
+        "M008",
+        "M009"
+      ]
+    },
+    {
+      "id": "2026-11-13/alder-commons/lunch",
+      "date": "2026-11-13",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M045",
+        "M046",
+        "M047",
+        "M048",
+        "M049",
+        "M050",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-13/alder-commons/dinner",
+      "date": "2026-11-13",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M058",
+        "M059",
+        "M060",
+        "M061",
+        "M062",
+        "M067",
+        "M068"
+      ]
+    },
+    {
+      "id": "2026-11-13/maple-market/breakfast",
+      "date": "2026-11-13",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "07:30",
+      "end": "10:45",
+      "item_ids": [
+        "M008",
+        "M009",
+        "M001",
+        "M002"
+      ]
+    },
+    {
+      "id": "2026-11-13/maple-market/lunch",
+      "date": "2026-11-13",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M056",
+        "M057",
+        "M058",
+        "M059",
+        "M060",
+        "M061",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-13/maple-market/dinner",
+      "date": "2026-11-13",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-13/stonebridge-kitchen/lunch",
+      "date": "2026-11-13",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M054",
+        "M055",
+        "M056",
+        "M057",
+        "M058",
+        "M059"
+      ]
+    },
+    {
+      "id": "2026-11-13/stonebridge-kitchen/dinner",
+      "date": "2026-11-13",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-13/stonebridge-kitchen/late_night",
+      "date": "2026-11-13",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M064",
+        "M065",
+        "M066"
+      ]
+    },
+    {
+      "id": "2026-11-14/alder-commons/breakfast",
+      "date": "2026-11-14",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "09:00",
+      "end": "10:45",
+      "item_ids": [
+        "M004",
+        "M005",
+        "M006",
+        "M007"
+      ]
+    },
+    {
+      "id": "2026-11-14/alder-commons/lunch",
+      "date": "2026-11-14",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M052",
+        "M053",
+        "M054",
+        "M055",
+        "M056",
+        "M057"
+      ]
+    },
+    {
+      "id": "2026-11-14/alder-commons/dinner",
+      "date": "2026-11-14",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016"
+      ]
+    },
+    {
+      "id": "2026-11-14/maple-market/breakfast",
+      "date": "2026-11-14",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "09:30",
+      "end": "10:45",
+      "item_ids": [
+        "M006",
+        "M007",
+        "M008",
+        "M009"
+      ]
+    },
+    {
+      "id": "2026-11-14/maple-market/lunch",
+      "date": "2026-11-14",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M067",
+        "M068",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-14/maple-market/dinner",
+      "date": "2026-11-14",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "19:00",
+      "item_ids": [
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M025",
+        "M026",
+        "M027"
+      ]
+    },
+    {
+      "id": "2026-11-14/stonebridge-kitchen/lunch",
+      "date": "2026-11-14",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M061",
+        "M062",
+        "M067",
+        "M068",
+        "M010",
+        "M011",
+        "M074"
+      ]
+    },
+    {
+      "id": "2026-11-14/stonebridge-kitchen/dinner",
+      "date": "2026-11-14",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M025",
+        "M069"
+      ]
+    },
+    {
+      "id": "2026-11-14/stonebridge-kitchen/late_night",
+      "date": "2026-11-14",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M063",
+        "M064",
+        "M065",
+        "M070"
+      ]
+    },
+    {
+      "id": "2026-11-15/alder-commons/breakfast",
+      "date": "2026-11-15",
+      "venue_id": "alder-commons",
+      "meal": "breakfast",
+      "start": "09:00",
+      "end": "10:45",
+      "item_ids": [
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M073"
+      ]
+    },
+    {
+      "id": "2026-11-15/alder-commons/lunch",
+      "date": "2026-11-15",
+      "venue_id": "alder-commons",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M059",
+        "M060",
+        "M061",
+        "M062",
+        "M067",
+        "M068"
+      ]
+    },
+    {
+      "id": "2026-11-15/alder-commons/dinner",
+      "date": "2026-11-15",
+      "venue_id": "alder-commons",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "20:00",
+      "item_ids": [
+        "M017",
+        "M018",
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M071"
+      ]
+    },
+    {
+      "id": "2026-11-15/maple-market/breakfast",
+      "date": "2026-11-15",
+      "venue_id": "maple-market",
+      "meal": "breakfast",
+      "start": "09:30",
+      "end": "10:45",
+      "item_ids": [
+        "M004",
+        "M005",
+        "M006",
+        "M007"
+      ]
+    },
+    {
+      "id": "2026-11-15/maple-market/lunch",
+      "date": "2026-11-15",
+      "venue_id": "maple-market",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020"
+      ]
+    },
+    {
+      "id": "2026-11-15/maple-market/dinner",
+      "date": "2026-11-15",
+      "venue_id": "maple-market",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "19:00",
+      "item_ids": [
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M032",
+        "M033",
+        "M034"
+      ]
+    },
+    {
+      "id": "2026-11-15/stonebridge-kitchen/lunch",
+      "date": "2026-11-15",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "lunch",
+      "start": "11:00",
+      "end": "14:30",
+      "item_ids": [
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M072"
+      ]
+    },
+    {
+      "id": "2026-11-15/stonebridge-kitchen/dinner",
+      "date": "2026-11-15",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "dinner",
+      "start": "16:30",
+      "end": "21:00",
+      "item_ids": [
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M032"
+      ]
+    },
+    {
+      "id": "2026-11-15/stonebridge-kitchen/late_night",
+      "date": "2026-11-15",
+      "venue_id": "stonebridge-kitchen",
+      "meal": "late_night",
+      "start": "21:00",
+      "end": "23:30",
+      "item_ids": [
+        "M066",
+        "M063",
+        "M064"
+      ]
+    }
+  ]
+}

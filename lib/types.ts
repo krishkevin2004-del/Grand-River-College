@@ -1,0 +1,64 @@
+// Shared shapes used by the ingest script, the server and the web page.
+
+import type { EscalationCategory } from "./escalation";
+
+/** One citable block of the handbook. */
+export type HandbookChunk = {
+  id: string; // e.g. "campus-housing-rules-and-regulations--guests-1"
+  part: string; // top-level heading, e.g. "Campus Housing Rules and Regulations"
+  section: string; // the heading we cite, e.g. "Guests"
+  pageStart: number;
+  pageEnd: number;
+  text: string; // the exact handbook text, shown to residents as the source
+};
+
+/** The file written by `npm run ingest`. */
+export type HandbookIndex = {
+  handbookTitle: string;
+  sourceFile: string;
+  sourceSha256?: string; // fingerprint of the PDF, so we know which version this came from
+  builtAt?: string;
+  chunks: HandbookChunk[];
+};
+
+/** A citation as shown under an answer. */
+export type Citation = {
+  source: string; // "2026-27 On-Campus Housing Handbook" or "Hall staff guidance"
+  section: string;
+  pages?: string; // "p. 15" or "pp. 15-16" (handbook only)
+  passage: string; // the exact text that was cited
+  url?: string; // the page the resident can open to see the source for themselves
+  label?: string; // short readable name for that link, e.g. "Housing Handbook · Guests, p. 14"
+};
+
+/** One earlier message, sent along so follow-up questions make sense. */
+export type HistoryTurn = { role: "user" | "assistant"; text: string };
+
+/** Everything the assistant can reply with. */
+export type AssistantReply =
+  | { type: "answer"; answer: string; citations: Citation[] }
+  | { type: "chat"; text: string } // fixed reply to greetings and thanks
+  | { type: "ra_lookup"; hallId?: string } // show RA contacts (asks for the hall if unknown)
+  // layer = which check fired, for the anonymous audit log (never shown to residents)
+  | {
+      type: "escalate";
+      category: EscalationCategory;
+      layer?: "keyword" | "classifier" | "fail_closed";
+    }
+  // source/link: set by skills with their own "no data" wording (e.g. dining) so the page can show a link instead of the RA hint
+  | {
+      type: "not_found";
+      note?: string;
+      source?: "dining" | "events";
+      link?: { label: string; url: string };
+    }
+  | { type: "off_topic" }
+  // dining: they didn't say which hall, so the page asks, with one button per hall
+  | {
+      type: "dining_pick_hall";
+      question: string;
+      halls: { id: string; name: string; building: string }[];
+    }
+  // visitor = this person asked too much; busy = the whole site is flooded; budget = today's spending cap is reached
+  | { type: "rate_limited"; reason: "visitor" | "busy" | "budget" }
+  | { type: "error"; message: string };
