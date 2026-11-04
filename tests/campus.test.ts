@@ -134,3 +134,17 @@ test("every escalation screen shows only fictional, non-link numbers", async () 
   }
   assert.ok(Object.keys(SCREENS).length >= 6);
 });
+
+test("maintenance rooms run 101-120, 201-220, 301-320 with five sample names", async () => {
+  const { FLOORS, roomsOnFloor, SAMPLE_NAMES, ISSUES, sampleReference } = await import("../lib/maintenance");
+  assert.deepEqual([...FLOORS], [1, 2, 3]);
+  for (const f of FLOORS) {
+    const rooms = roomsOnFloor(f);
+    assert.equal(rooms.length, 20);
+    assert.equal(rooms[0], `${f}01`);
+    assert.equal(rooms[19], `${f}20`);
+  }
+  assert.equal(SAMPLE_NAMES.length, 5);
+  assert.ok(ISSUES.length >= 5);
+  assert.match(sampleReference(12345), /^GRU-MX-\d{4}$/);
+});

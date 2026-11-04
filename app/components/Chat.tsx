@@ -14,8 +14,9 @@ import { HALLS, isRaOnDuty, matchHall, type Hall } from "@/lib/halls";
 import type { AssistantReply, Citation, HistoryTurn } from "@/lib/types";
 import { Crest, Mascot } from "./Brand";
 import EscalationScreen from "./EscalationScreen";
+import MaintenanceSheet from "./MaintenanceSheet";
 import { HallContactCard, HallPicker } from "./HallContacts";
-import { ChatIcon, HeartIcon, PhoneIcon, SendIcon } from "./Icons";
+import { HeartIcon, PhoneIcon, SendIcon, WrenchIcon } from "./Icons";
 import { useRaOnDuty } from "./useRaOnDuty";
 
 type Message =
@@ -45,7 +46,9 @@ export default function Chat() {
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
+  const [maintenance, setMaintenance] = useState(false);
   const closeHelp = useCallback(() => setEscalation(null), []);
+  const closeMaintenance = useCallback(() => setMaintenance(false), []);
 
   // "Reach the RA on duty" during duty hours (7 pm to 7 am); "Reach your RA" otherwise.
   const onDuty = useRaOnDuty();
@@ -136,6 +139,13 @@ export default function Chat() {
     if (category) {
       logEscalation(category, "keyword");
       return addReply({ type: "escalate", category });
+    }
+
+    // "Report a repair" opens the sample maintenance form instead of asking the server.
+    if (/\b(maintenance (request|ticket|form)|(request|report|need|submit) (a )?(maintenance|repair)|work order|repair request|fix something in my room)\b/i.test(q)) {
+      addReply({ type: "chat", text: "Opening the sample maintenance request. It takes five quick questions." });
+      setMaintenance(true);
+      return;
     }
 
     // A short reply to "which hall?" (like "akers") is answered right here.
@@ -255,6 +265,9 @@ export default function Chat() {
             <button className="chip" onClick={reachRA}>
               <PhoneIcon size={15} /> {raLabel}
             </button>
+            <button className="chip" onClick={() => setMaintenance(true)}>
+              <WrenchIcon size={15} /> Maintenance
+            </button>
             {input.length > 400 && (
               <span className="count" aria-live="off">
                 {input.length}/{CONFIG.maxQuestionLength}
@@ -312,6 +325,7 @@ export default function Chat() {
         </div>
       </div>
 
+      {maintenance && <MaintenanceSheet onClose={closeMaintenance} />}
       {escalation && (
         <EscalationScreen category={escalation} onBack={closeHelp} />
       )}
