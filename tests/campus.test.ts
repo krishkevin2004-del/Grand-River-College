@@ -168,3 +168,22 @@ test("statements about dying or being unable to breathe open the help screen; id
     assert.notEqual((await ask(q)).type, "escalate", q);
   }
 });
+
+test("179 distressed messages all open the help screen; everyday uses of the same words do not", async () => {
+  const { DISTRESS, BENIGN } = await import("./distress");
+  const { checkEscalation } = await import("../lib/escalation");
+  assert.ok(DISTRESS.length >= 150);
+  const missed = DISTRESS.filter((q) => !checkEscalation(q));
+  assert.deepEqual(missed, []);
+  const falseAlarms = BENIGN.filter((q) => checkEscalation(q));
+  assert.deepEqual(falseAlarms, []);
+});
+
+test("personal, emotional messages with no campus topic go to help, not the out-of-scope reply", async () => {
+  for (const q of ["I feel so heavy today", "i am scared about my future", "i feel sick of all this", "i need help i dont feel okay", "my heart hurts", "i am drowning", "everything hurts", "i am so stressed i cant eat"]) {
+    assert.equal((await ask(q)).type, "escalate", q);
+  }
+  for (const q of ["I feel like pizza tonight", "I'm so tired of the cold, can I have a heater", "I'm lost, where is the laundry", "I'm stuck on the wifi login", "i need help with laundry", "can you help me find the dining hall", "I'm tired, what's open late", "I lost my key card"]) {
+    assert.notEqual((await ask(q)).type, "escalate", q);
+  }
+});

@@ -130,9 +130,11 @@ const RULES: Record<Exclude<EscalationCategory, "general">, RegExp[]> = {
     /\b(hurt|hurting|cut|cutting|harm|harming) (my ?self|myself)\b/,
     /\boverdos/,
     // Low mood and distress said plainly ("I am sad", "feeling hopeless").
-    /\b(i am|im|i feel|i felt|feel|feeling|ive been|i have been|been feeling|i just feel|im feeling|i am feeling) (so |really |very |just |kinda |kind of |a little |pretty |extremely |super |always |constantly )?(sad|depressed|hopeless|lonely|alone|anxious|overwhelmed|worthless|miserable|empty|numb|broken|helpless|trapped|stressed out|not ok|not okay|unhappy)\b/,
-    /\b(i am|im|i feel|feeling|ive been) (so |really |very |just )?(down|alone)( lately| today| right now| again)?$/,
-    /\b(depressed|depression|panic attack|anxiety attack|breakdown|crying a lot|cant stop crying)\b/,
+    /\b(i am|im|i feel|i felt|feel|feeling|ive been|i have been|been feeling|i just feel|im feeling|i am feeling) (so |really |very |just |kinda |kind of |a little |pretty |extremely |super |always |constantly )?(sad|depressed|hopeless|lonely|alone|anxious|overwhelmed|worthless|miserable|empty|numb|broken|helpless|trapped|stressed out|not ok|not okay|unhappy|invisible|defeated|a failure|a burden|a mess|a waste|not doing (well|ok|okay|good|great))\b/,
+    /\b(i feel|feeling|felt|ive been feeling) (so |really |very |completely |totally |kind of )?(lost|low|terrified|scared|afraid|stuck|disconnected|dead inside)\b/,
+    /\b(i am|im) (terrified|so scared|really scared)[!. ]*$/,
+    /\b(i am|im|i feel|feeling|ive been) (so |really |very |just )?(down|alone|all alone)( lately| today| right now| again)?$/,
+    /\b(depressed|depression|panic attacks?|anxiety attacks?|breakdown|crying a lot|cant stop crying)\b/,
     /\b(cant|can not|cannot) (do this|go on|take (it|this)|cope|handle (it|this|anything))( anymore| any more)?\b/,
     /\b(nothing matters|whats the point|no point (in|to) anything|giving up|give up on (life|everything))\b/,
     /\bno one (cares|likes me|would (notice|miss me))\b/,
@@ -143,6 +145,38 @@ const RULES: Record<Exclude<EscalationCategory, "general">, RegExp[]> = {
     /\bi (might|may|could|will|think i will|feel like i will) die\b/,
     /\b(wish|wished) (i|that i) (was|were) (dead|gone|never born)\b/,
     /\bi dont (want|wanna) to (be here|be around|wake up|go on)\b/,
+    /\b(my )?(anxiety|depression|panic) (is|has been|keeps|feels)\b/,
+    /\b(i )?(have|ve got|got) (no|zero) (friends|one|body)\b|\bi have nobody\b/,
+    /\b(feel|feeling|felt|am|im) (like )?(a |such a )?(failure|loser|burden|waste|mess|nobody)\b/,
+    /\b(im|i am|i have been|ive been) (really |so |just )?struggling( right now| lately| a lot)?[!. ]*$/,
+    /\bi hate (being|living) (here|alive)\b/,
+    /\b(i am|im) (so |really |very )?(stressed|overwhelmed|anxious|exhausted)\b.*\bcant\b/,
+    /\bcant (sleep|get out of bed|focus|function|think straight)\b.*\b(anxious|stress|sad|depress|alone|hopeless|everything)\b/,
+    /\b(i give up|i gave up|want to give up|ready to give up)\b/,
+    /\b(what is|whats) the point( of (anything|it all|living|life|trying))?\b/,
+    /\b(life|everything|it all) (is|feels|seems) (pointless|meaningless|hopeless|too much|a mess|falling apart|over)\b/,
+    /\b(my life is a mess|falling apart|fell apart|breaking point|rock bottom)\b/,
+    /\b(losing my mind|going crazy|im crazy)\b/,
+    /\bcant stop (shaking|crying|panicking|thinking about)\b/,
+    /\b(crying|cried) (all|every|for)\b/,
+    /\b(burden|waste of space)\b/,
+    /\bi dont (matter|belong)\b|\bdont belong anywhere\b|\balone forever\b|\bfeel(ing)? invisible\b/,
+    /\b(wish|wished) (i|that i) (could (just )?disappear|wasnt (here|alive|born)|could (just )?vanish)\b/,
+    /\b(think|thinking|thought|thoughts) (about|of) (ending|dying|death|killing|suicide|hurting)\b/,
+    /\bending (it|everything|my life)\b|\bend it all\b/,
+    /\bi (have been|ve been|am|was) cutting\b/,
+    /\b(took|taken|swallowed) (too many|a bunch of|a lot of|a handful of|all my|all the) (pills|meds|tablets|medication)\b/,
+    /\b(no|dont see a|cant see a) way out\b|\bcant see a future\b|\bnothing to live for\b|\bnot worth living\b|\b(isnt|not) worth (it|living)\b/,
+    /\bdone with (everything|life|it all|living)\b/,
+    /\bwant (it|everything|this|the pain) (all )?to stop\b|\bcant (stand|bear|take) the pain\b|\bsleep forever\b/,
+    /\b(so |really )?(tired|sick) of (everything|living|life|being alive|it all|trying)\b/,
+    /\bdont know what to do (anymore|any more)\b|\bcant keep (doing this|living|going|pretending)\b/,
+    /^(im|i am) (so )?done[!. ]*$/,
+    /\b(run|get) away from everything\b|\bfeel like ending\b/,
+    /\btell me (its|it will be|everything will be|its going to be) ok(ay)?\b/,
+    /\b(scared|afraid) (of|that i might hurt) my ?self\b|\bdont trust my ?self\b|\bmight hurt my ?self\b/,
+    /\bneed (someone|somebody) to talk\b|\bneed to talk to (someone|somebody)\b|\bsomeone to talk to\b|\bcan (someone|somebody) (please )?talk to me\b/,
+    /^(please )?(help me|i need help)( please)?[!. ]*$|^please help\b/,
     /\b(want|wanna|wish|need) to disappear\b/,
     /\b(everyone|everybody|the world|they) would be better (off )?without me\b/,
   ],
@@ -164,7 +198,8 @@ const RULES: Record<Exclude<EscalationCategory, "general">, RegExp[]> = {
     /\b(broke|breaking|broken) into\b/,
     /\b(following|followed) me\b/,
     /\b(banging|pounding) on (my|our|the) door\b/,
-    /\btrying to (get|break) in\b/,
+    /\btrying to (get|break) in(to)?\b/,
+    /\b(dont|do not|doesnt|not) feel safe\b/,
   ],
   abuse: [
     // Something happening to a person, not a question about the policy.
@@ -182,6 +217,9 @@ const RULES: Record<Exclude<EscalationCategory, "general">, RegExp[]> = {
     /\bgrooming me\b/,
     /\bhazing\b/,
     /\bnon ?consensual\b/,
+    /\b(afraid|scared|terrified) of (my|him|her|them|their)\b/,
+    /\b(blackmail|sextort)/,
+    /\bbull(y|ies|ying) (me|us)\b/,
     /\bwithout (my )?consent\b/,
   ],
   conduct: [
@@ -202,6 +240,7 @@ const RULES: Record<Exclude<EscalationCategory, "general">, RegExp[]> = {
     /\b(room|suite) ?mates?\b.*\b(conflict|fight|fighting|argu|problem|issue|hate|cant stand|annoying|disrespect|rude|mean to me|messy|dirty|steal|stole|stealing|won ?t|wont|keeps|always|never|lock(s|ed)? me out|sexile|kick(ed|ing)? me out|get along|not getting along|mad at|yell|scream|uncomfortable|drama|toxic|bully|bullying|pressur)/,
     /\b(conflict|fight|fighting|argu|problem|issue|drama|not getting along|dont get along|cant stand|hate) .*\b(room|suite) ?mates?\b/,
     /\bnew roommate because\b/,
+    /\bcant (live|stay|sleep) (with|in)\b.*\b(room|suite) ?mate/,
   ],
 };
 
@@ -249,4 +288,16 @@ function evasionVariants(question: string): string[] {
     out.add(n.replace(/\b(?:[a-z] ){2,}[a-z]\b/g, (run) => run.replace(/ /g, ""))); // "k i l l" -> "kill"
   }
   return [...out];
+}
+
+/**
+ * Safety net for messages that match no campus topic: the speaker is talking about their own
+ * feelings or situation ("I feel...", "I can't...", "I need someone..."). Errs toward showing help.
+ */
+export function looksPersonal(question: string): boolean {
+  const text = normalizeQuestion(question);
+  return (
+    /\b(i|im|ive|id|my|me|myself|everything)\b/.test(text) &&
+    /\b(sad|upset|anxious|hopeless|worthless|lonely|alone|exhausted|overwhelm\w*|drown\w*|suffocat\w*|struggl\w*|crying|cry|hurts?|hurting|pain|scared of|afraid of|ashamed|awful|terrible|horrible|heavy|miserable|scared about|so scared|sick of (all|it)|dont feel (okay|ok|good|right|well|safe)|stress\w* out|so stressed|worried about myself|cant (cope|go on|do this|take|handle|stop|sleep|breathe|eat anything)|dont know (what to do|if i can)|wish (i|that i)|hate (my ?self|my life|this|everything|how i feel)|need (someone|to talk))\b/.test(text)
+  );
 }

@@ -1,7 +1,7 @@
 import { answerQuestion } from "./answer";
 import { CONFIG } from "./config";
 import { campusReply } from "./demo";
-import { checkEscalation } from "./escalation";
+import { checkEscalation, looksPersonal } from "./escalation";
 import { isRaContactRequest, matchHall } from "./halls";
 import { checkLimits } from "./limits";
 import { classifySafety } from "./safety";
@@ -32,6 +32,8 @@ export async function askHandbook(
   if (isRaContactRequest(question)) return { type: "ra_lookup", hallId: matchHall(question)?.id };
   const answer = campusReply(question);
   if (answer) return answer;
+  // Nothing campus-related matched. A personal, emotional message goes to people, never to "out of scope".
+  if (looksPersonal(question)) return { type: "escalate", category: "general", layer: "keyword" };
   if (modelEnabled) {
     const result = await answerQuestion(question, history);
     return result.type === "ra_lookup" ? { ...result, hallId: matchHall(question)?.id } : result;
