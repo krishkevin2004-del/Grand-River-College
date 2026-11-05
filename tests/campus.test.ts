@@ -158,3 +158,13 @@ test("greetings and small talk get warm replies, real questions still route", as
   assert.equal((await ask("how are you open after 9")).type, "answer");
   assert.equal((await ask("hi, can I bring a fridge")).type, "answer");
 });
+
+
+test("statements about dying or being unable to breathe open the help screen; idioms do not", async () => {
+  for (const q of ["hello i am dying", "im dying", "i think i am dying", "i feel like i might die", "i might die", "i wish i was dead", "i dont want to be here anymore", "i want to disappear", "everyone would be better off without me", "i cant breathe", "chest pain", "heart attack", "i am having an allergic reaction"]) {
+    assert.equal((await ask(q)).type, "escalate", q);
+  }
+  for (const q of ["im dying to try the vegan menu", "I'm dying laughing at Trivia", "dying for some pizza", "what is dying hair allowed in rooms"]) {
+    assert.notEqual((await ask(q)).type, "escalate", q);
+  }
+});

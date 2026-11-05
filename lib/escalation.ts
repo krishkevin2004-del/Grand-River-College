@@ -138,6 +138,13 @@ const RULES: Record<Exclude<EscalationCategory, "general">, RegExp[]> = {
     /\bno one (cares|likes me|would (notice|miss me))\b/,
     /\bnobody (cares|likes me|would (notice|miss me))\b/,
     /\b(hate|hating) (my ?self|myself|my life)\b/,
+    // Dying, said about the speaker. Escalates unless it is plainly an idiom ("dying to try the tacos").
+    /\b(i am|im|i feel like (i am|im)|i think (i am|im)|i might be|i may be|i feel like i might be|am) (dying|going to die|gonna die)\b(?! (laughing|of laughter|of embarrassment|to |for |from laughing|inside from))/,
+    /\bi (might|may|could|will|think i will|feel like i will) die\b/,
+    /\b(wish|wished) (i|that i) (was|were) (dead|gone|never born)\b/,
+    /\bi dont (want|wanna) to (be here|be around|wake up|go on)\b/,
+    /\b(want|wanna|wish|need) to disappear\b/,
+    /\b(everyone|everybody|the world|they) would be better (off )?without me\b/,
   ],
   safety: [
     /\b(this is|its|having|have|theres|there is) an emergency\b/, // not "emergency lock change"
@@ -151,6 +158,9 @@ const RULES: Record<Exclude<EscalationCategory, "general">, RegExp[]> = {
     /\bon fire\b/,
     /\b((not|isnt|stopped) breathing|unconscious|unresponsive|passed out|wont wake up|seizure|bleeding)\b/,
     /\balcohol poisoning\b/,
+    /\b(cant|cannot|can not|hard to|trouble|struggling to) breathe?\b/,
+    /\b(chest pain|heart attack|having a stroke|anaphyla)/,
+    /\b(allergic reaction|throat is closing|throat closing)\b/,
     /\b(broke|breaking|broken) into\b/,
     /\b(following|followed) me\b/,
     /\b(banging|pounding) on (my|our|the) door\b/,

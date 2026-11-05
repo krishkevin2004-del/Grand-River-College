@@ -456,6 +456,9 @@ function AssistantMessage({
           <p>
             Hmm, that one&apos;s outside what I know. 😊 I&apos;m best with Grand River dining, events, housing and campus contacts. Want to try one of these?
           </p>
+          <p className="muted small">
+            If you&apos;re going through something hard, tap <strong>Get help</strong> at the top any time.
+          </p>
           {isLatest && (
             <div className="hall-chips">
               {["What's for dinner tonight?", "Any free events this weekend?", "How many guests can I sign in?"].map((q) => (
