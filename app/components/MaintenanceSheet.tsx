@@ -9,7 +9,8 @@ import { HALLS } from "@/lib/halls";
 import { FLOORS, ISSUES, PRIORITY_COPY, SAMPLE_NAMES, roomsOnFloor, sampleReference } from "@/lib/maintenance";
 import { CloseIcon } from "./Icons";
 
-type Answers = { hall?: string; floor?: number; room?: string; issue?: string; name?: string };
+type Answers = { hall?: string; floor?: number; room?: string; issue?: string; details?: string; name?: string };
+const DETAILS_MAX = 300;
 const STEPS = ["Which hall?", "Which floor?", "Which room?", "What's the issue?", "Your name"] as const;
 
 export default function MaintenanceSheet({ onClose }: { onClose: () => void }) {
@@ -111,6 +112,18 @@ export default function MaintenanceSheet({ onClose }: { onClose: () => void }) {
                   {ISSUES.map((i) => <option key={i.id} value={i.id}>{i.label}</option>)}
                 </select>
 
+                <label className="mx-label" htmlFor="mx-details">Describe the problem (optional)</label>
+                <textarea
+                  id="mx-details"
+                  className="mx-text"
+                  rows={3}
+                  maxLength={DETAILS_MAX}
+                  placeholder="For example: the sink has been dripping since last night."
+                  value={a.details ?? ""}
+                  onChange={(e) => setA({ ...a, details: e.target.value })}
+                />
+                <p className="mx-count" aria-live="off">{(a.details ?? "").length}/{DETAILS_MAX}</p>
+
                 <span className="mx-label">Photo (optional)</span>
                 <button type="button" className="mx-drop" onClick={() => setPhotoNote(true)}>
                   <strong>Add a photo</strong>
@@ -148,6 +161,7 @@ export default function MaintenanceSheet({ onClose }: { onClose: () => void }) {
               <div><dt>Reference</dt><dd>{reference} <small>(sample)</small></dd></div>
               <div><dt>Location</dt><dd>{hall.name}, room {a.room}</dd></div>
               <div><dt>Issue</dt><dd>{issue.label}</dd></div>
+              {a.details?.trim() && <div><dt>Details</dt><dd className="mx-details">{a.details.trim()}</dd></div>}
               <div><dt>Priority</dt><dd>{PRIORITY_COPY[issue.priority].label}</dd></div>
             </dl>
             <p className="sheet-message">
